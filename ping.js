@@ -1,7 +1,7 @@
 const https = require("https");
 
 const postData = JSON.stringify({
-  message: "Hello message",
+  message: "Some message",
 });
 
 const options = {
