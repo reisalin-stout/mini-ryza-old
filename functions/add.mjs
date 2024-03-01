@@ -1,3 +1,5 @@
 export default async (req, context) => {
-  return new Response(`Message: ${req.body}`);
+  const body = await req.json();
+  const message = body.message || "No message provided";
+  return new Response(`Message: ${message}`);
 };
