@@ -28,25 +28,28 @@ function interact(command) {
 }
 
 const app = express();
+app.use(express.json());
 
-app.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, res) => {
-  const message = req.body;
-  if (message.type === InteractionType.APPLICATION_COMMAND) {
-    res.send({
-      type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
-      data: {
-        content: "Hello world",
-      },
-    });
+app.get("/interactions", (req, res) => {
+  res.send("Hello Site");
+});
+app.post("/interactions", (req, res) => {
+  const signature = req.get("X-Signature-Ed25519");
+  const timestamp = req.get("X-Signature-Timestamp");
+  const isValidRequest = verifyKey(req.rawBody, signature, timestamp, process.env.PUBLIC_KEY);
+  if (!isValidRequest) {
+    return res.status(401).end("Bad request signature");
   }
-  /*
+
+  const message = req.body;
+
   try {
     console.log("Request:", message);
     res.json(interact(message));
   } catch (error) {
     console.error("Error parsing request:", error);
     res.status(400).json({ error: "Bad request" });
-  }*/
+  }
 });
 
 const PORT = 3000;
