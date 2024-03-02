@@ -9631,7 +9631,7 @@ async function interact(command) {
   return response;
 }
 
-router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, res) => {
+router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async (req, res) => {
   const command = req.body.data;
   console.log(`Command received: ${command.name} (${command.type})`);
 
@@ -9643,7 +9643,7 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, 
       return;
     }
     */
-    let result = interact(command);
+    let result = await interact(command);
     res.send({
       type: 4,
       data: { content: result },
