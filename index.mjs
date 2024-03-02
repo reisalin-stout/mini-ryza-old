@@ -1,8 +1,6 @@
 import express from "express";
 import { verifyKeyMiddleware } from "discord-interactions";
 
-const DISCORD_PUBLIC_KEY = process.env.DISCORD_PUBLIC_KEY;
-
 function interact(command) {
   if (command.type == 1) {
     return { type: 1 };
@@ -33,9 +31,16 @@ const app = express();
 
 app.use(express.json());
 
-app.post("/interactions", verifyKeyMiddleware(DISCORD_PUBLIC_KEY), (req, res) => {
+app.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, res) => {
   const message = req.body;
-
+  if (message.type === InteractionType.APPLICATION_COMMAND) {
+    res.send({
+      type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+      data: {
+        content: "Hello world",
+      },
+    });
+  }
   try {
     console.log("Request:", message);
     res.json(interact(message));
