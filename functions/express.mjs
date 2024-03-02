@@ -1,15 +1,16 @@
 "use strict";
-import express from "express";
+import express, { Router } from "express";
 import serverless from "serverless-http";
 
 const app = express();
-
+const router = Router();
 app.use(express.json());
-app.get("/", (req, res) => {
+router.get("/", (req, res) => {
   res.send("Hello");
 });
-app.post("/updatestate", (req, res) => {
+router.post("/updatestate", (req, res) => {
   res.json("Hello");
 });
+app.use("/.netlify/functions/", router);
 
 export const handler = serverless(app);
