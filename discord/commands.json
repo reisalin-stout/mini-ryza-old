@@ -19,6 +19,41 @@
       ]
     },
     {
+      "name": "reverse-ehp",
+      "description": "Find out best HP/Def spread for a target eHP",
+      "options": [
+        {
+          "name": "ehp",
+          "description": "The target eHP",
+          "type": 4,
+          "required": true
+        },
+        {
+          "name": "multiplier",
+          "description": "If the astromon is strong/weak/neutral element compared to the source of ehp",
+          "type": 4,
+          "required": true,
+          "choices": [
+            { "name": "Advantage", "value": 0.5 },
+            { "name": "Neutral", "value": 1 },
+            { "name": "Disadvantage", "value": 1.5 }
+          ]
+        },
+        {
+          "name": "base-hp",
+          "description": "The Astromon base HP",
+          "type": 4,
+          "required": true
+        },
+        {
+          "name": "base-def",
+          "description": "The Astromon base HP",
+          "type": 4,
+          "required": true
+        }
+      ]
+    },
+    {
       "name": "bye",
       "description": "Say goodbye!"
     },
