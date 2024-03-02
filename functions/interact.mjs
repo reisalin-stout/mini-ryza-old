@@ -16,6 +16,12 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, 
 
   try {
     console.log("Request:", message.name);
+    let response_content = `Command received: ${message.name}`;
+    res.send({
+      type: 4,
+      data: { content: response_content },
+    });
+    return;
     res.json(interact(message));
   } catch (error) {
     console.error("Error parsing request:", error);
