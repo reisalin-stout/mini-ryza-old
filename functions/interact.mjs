@@ -11,18 +11,18 @@ router.get("/", (req, res) => {
   res.send("Hello");
 });
 router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, res) => {
-  console.log("Received interaction", req.body);
-  const message = req.body.data;
-
+  const command = req.body.data;
+  console.log(`Command received: ${command.name}`);
+  if (command.type == 1) {
+    res.send({ type: 1 });
+    return;
+  }
   try {
-    console.log("Request:", message.name);
-    let response_content = `Command received: ${message.name}`;
+    let result = interact(command);
     res.send({
       type: 4,
-      data: { content: response_content },
+      data: { content: result },
     });
-    return;
-    res.json(interact(message));
   } catch (error) {
     console.error("Error parsing request:", error);
     res.status(400).json({ error: "Bad request" });
@@ -30,29 +30,22 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, 
 });
 
 function interact(command) {
-  if (command.type == 1) {
-    return { type: 1 };
-  } else {
-    let response_content;
-    switch (command.name) {
-      case "hello":
-        response_content = "Hello there!";
-        break;
-      case "bye":
-        response_content = "Goodbye!";
-        break;
-      case "echo":
-        let original_message = command.options[0].value;
-        response_content = `Echoing: ${original_message}`;
-        break;
-      default:
-        response_content = "No Message";
-    }
-    return {
-      type: 4,
-      data: { content: response_content },
-    };
+  let response;
+  switch (command.name) {
+    case "hello":
+      response = "Hello there!";
+      break;
+    case "bye":
+      response = "Goodbye!";
+      break;
+    case "echo":
+      let original_message = command.options[0].value;
+      response = `Echoing: ${original_message}`;
+      break;
+    default:
+      response = "No Message";
   }
+  return response;
 }
 
 app.use("/.netlify/functions/interact", router);
