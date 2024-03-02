@@ -10,24 +10,6 @@ router.get("/", (req, res) => {
   console.log("Reached /");
   res.send("Hello");
 });
-router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, res) => {
-  const command = req.body.data;
-  console.log(`Command received: ${command.name}`);
-  if (command.type == 1) {
-    res.send({ type: 1 });
-    return;
-  }
-  try {
-    let result = interact(command);
-    res.send({
-      type: 4,
-      data: { content: result },
-    });
-  } catch (error) {
-    console.error("Error parsing request:", error);
-    res.status(400).json({ error: "Bad request" });
-  }
-});
 
 function interact(command) {
   let response;
@@ -47,6 +29,26 @@ function interact(command) {
   }
   return response;
 }
+
+router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, res) => {
+  const command = req.body.data;
+  console.log(`Command received: ${command.name} (${command.type})`);
+
+  try {
+    if (command.type == 1) {
+      res.send({ type: 1 });
+      return;
+    }
+    let result = interact(command);
+    res.send({
+      type: 4,
+      data: { content: result },
+    });
+  } catch (error) {
+    console.error("Error parsing request:", error);
+    res.status(400).json({ error: "Bad request" });
+  }
+});
 
 app.use("/.netlify/functions/interact", router);
 export const handler = serverless(app);
