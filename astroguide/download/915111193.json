@@ -1,0 +1,232 @@
+{
+  "data": {
+    "allUnusedAstromonsJson": {
+      "edges": [
+        {
+          "node": {
+            "uid": 518820693,
+            "family_slug": "apophis",
+            "family_name": "Apophis",
+            "name": "Apophis",
+            "element": "dark",
+            "hp": 1515,
+            "attack": 2254,
+            "defence": 9005,
+            "recovery": 30005,
+            "icon_name": "BossApophis_large.png",
+            "born_grade": 1,
+            "evolution": 1,
+            "leader_effect": { "name": "Protector's Shield" },
+            "default_effect": {
+              "name": "Resistance Down",
+              "description": "Grants a [FFD428]70%[-] chance to reduce enemy resistance for [FFD428]3[-] turn(s). This skill ignores enemies' resistance.",
+              "icon_name": "se_nresistdown.png"
+            },
+            "active_effect": {
+              "name": "Curse",
+              "description": "Grants a [FFD428]90%[-] chance to curse the enemy for [FFD428]5[-] turn(s). Cursed foes take HP damage.",
+              "icon_name": "se_ncurse.png"
+            },
+            "super_effect": {
+              "name": "Fulminating Curse",
+              "description": "Deals explosive damage in proportion to the number of curses afflicted upon the opponent.",
+              "icon_name": "se_ncurseexplosion.png"
+            }
+          }
+        },
+        {
+          "node": {
+            "uid": 1317701677,
+            "family_slug": "apophis",
+            "family_name": "Apophis",
+            "name": "Apophis",
+            "element": "fire",
+            "hp": 1515,
+            "attack": 2254,
+            "defence": 9005,
+            "recovery": 30005,
+            "icon_name": "BossApophisR_large.png",
+            "born_grade": 1,
+            "evolution": 1,
+            "leader_effect": { "name": "Protector's Shield" },
+            "default_effect": {
+              "name": "Expose Weakness",
+              "description": "Grants a [FFD428]90%[-] chance to expose the enemy's weakness for [FFD428]3[-] turn(s). [i]Expose Weakness does not stack, and exposed foes take increased damage from the next attack.[/i]",
+              "icon_name": "se_ongoingweakpoint.png"
+            },
+            "active_effect": {
+              "name": "Weaken",
+              "description": "Grants a [FFD428]80%[-] chance to weaken the enemy for [FFD428]3[-] turn(s). Weakened foes have reduced attack and defense.",
+              "icon_name": "se_debuffattackanddefence.png"
+            },
+            "super_effect": {
+              "name": "Predator",
+              "description": "Increases damage dealt by [FFD428]50%[-].",
+              "icon_name": "se_selfadddamagebyelement.png"
+            }
+          }
+        },
+        {
+          "node": {
+            "uid": 153078605,
+            "family_slug": "apophis",
+            "family_name": "Apophis",
+            "name": "Apophis",
+            "element": "water",
+            "hp": 1515,
+            "attack": 3004,
+            "defence": 9005,
+            "recovery": 30005,
+            "icon_name": "BossApophisB_large.png",
+            "born_grade": 1,
+            "evolution": 1,
+            "leader_effect": { "name": "Protector's Shield" },
+            "default_effect": {
+              "name": "Sap",
+              "description": "Grants a [FFD428]100%[-] chance to inflict the enemy with three types of sap damage for [FFD428]5[-] turn(s). Sapped foes have decreased resistance.",
+              "icon_name": "se_ongoingtripledechppercentfrommaxhp.png"
+            },
+            "active_effect": {
+              "name": "Recovery Seal",
+              "description": "Grants a [FFD428]100%[-] chance to disable the enemy's HP recovery for [FFD428]3[-] turn(s).",
+              "icon_name": "se_debufffinalvalueheal.png"
+            },
+            "super_effect": {
+              "name": "Full Buff Breaker",
+              "description": "Grants a [FFD428]100%[-] chance to dispel all enemy enhancements including shields and immunity.",
+              "icon_name": "se_clearbuffshield.png"
+            }
+          }
+        },
+        {
+          "node": {
+            "uid": 1423180137,
+            "family_slug": "apophis",
+            "family_name": "Apophis",
+            "name": "Apophis",
+            "element": "tree",
+            "hp": 1515,
+            "attack": 3004,
+            "defence": 6005,
+            "recovery": 30005,
+            "icon_name": "BossApophisG_large.png",
+            "born_grade": 1,
+            "evolution": 1,
+            "leader_effect": { "name": "Protector's Shield" },
+            "default_effect": {
+              "name": "Blind",
+              "description": "Grants a [FFD428]90%[-] chance to blind the enemy for [FFD428]3[-] turn(s). Blinded foes' critical hit rate and damage are reduced.",
+              "icon_name": "se_debuffcriticalprobanddamage.png"
+            },
+            "active_effect": {
+              "name": "Shield",
+              "description": "Grants a high-capacity shield to all allies for [FFD428]5[-] turn(s).",
+              "icon_name": "se_shielddamagebyabsolute.png"
+            },
+            "super_effect": {
+              "name": "Damage Reduction",
+              "description": "Reduces damage received by [FFD428]50%[-] for [FFD428]5[-] turn(s).",
+              "icon_name": "se_nreducedamage.png"
+            }
+          }
+        },
+        {
+          "node": {
+            "uid": 1500719982,
+            "family_slug": "apophis",
+            "family_name": "Apophis",
+            "name": "Apophis",
+            "element": "light",
+            "hp": 1515,
+            "attack": 1504,
+            "defence": 9005,
+            "recovery": 30005,
+            "icon_name": "BossApophisW_large.png",
+            "born_grade": 1,
+            "evolution": 1,
+            "leader_effect": { "name": "Protector's Shield" },
+            "default_effect": {
+              "name": "Defense Down",
+              "description": "Grants a [FFD428]80%[-] chance to reduce the enemy's defense for [FFD428]3[-] turn(s).",
+              "icon_name": "se_debuffdefence.png"
+            },
+            "active_effect": {
+              "name": "Crit. Rate Up",
+              "description": "Increases all allies' critical hit rate for [FFD428]2[-] turn(s).",
+              "icon_name": "se_ncriticalsup.png"
+            },
+            "super_effect": {
+              "name": "Hunter",
+              "description": "Increases critical hit damage by [FFD428]300%[-].",
+              "icon_name": "se_selfbuffcriticaldamage.png"
+            }
+          }
+        },
+        {
+          "node": {
+            "uid": 207089350,
+            "family_slug": "apophis",
+            "family_name": "Apophis",
+            "name": "Apophis",
+            "element": "dark",
+            "hp": 1515,
+            "attack": 2704,
+            "defence": 6005,
+            "recovery": 30005,
+            "icon_name": "BossSpecialApophis_large.png",
+            "born_grade": 1,
+            "evolution": 1,
+            "leader_effect": { "name": "Protector's Shield" },
+            "default_effect": {
+              "name": "Weaken",
+              "description": "Grants a [FFD428]80%[-] chance to weaken the enemy for [FFD428]2[-] turn(s). Weakened foes have reduced attack and defense.",
+              "icon_name": "se_debuffattackanddefence.png"
+            },
+            "active_effect": {
+              "name": "Attack Up",
+              "description": "Increases allies' attack power for [FFD428]5[-] turn(s).",
+              "icon_name": "se_buffattack.png"
+            },
+            "super_effect": {
+              "name": "Puncture",
+              "description": "Applies a self-buff that ignores [FFD428]70%[-] of the enemy's base defense.",
+              "icon_name": "se_npenetrateup.png"
+            }
+          }
+        },
+        {
+          "node": {
+            "uid": 1185681773,
+            "family_slug": "apophis",
+            "family_name": "Apophis",
+            "name": "Apophis",
+            "element": "light",
+            "hp": 1515,
+            "attack": 1204,
+            "defence": 9005,
+            "recovery": 30005,
+            "icon_name": "BossSpecialApophisW_large.png",
+            "born_grade": 1,
+            "evolution": 1,
+            "leader_effect": { "name": "Protector's Shield" },
+            "default_effect": {
+              "name": "Stun",
+              "description": "Grants a [FFD428]80%[-] chance to stun the enemy for [FFD428]2[-] turn(s).",
+              "icon_name": "se_stun.png"
+            },
+            "active_effect": {
+              "name": "Resistance Down",
+              "description": "Grants a [FFD428]80%[-] chance to reduce enemy resistance for [FFD428]3[-] turn(s). This skill ignores enemies' resistance.",
+              "icon_name": "se_nresistdown.png"
+            },
+            "super_effect": {
+              "name": "Shock",
+              "description": "Grants a [FFD428]100%[-] chance to shock target for [FFD428]2[-] turn(s). Shocked foes cannot act and have reduced defense.",
+              "icon_name": "se_stunelectricshock.png"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

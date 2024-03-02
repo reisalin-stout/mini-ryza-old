@@ -1,0 +1,418 @@
+{
+  "data": {
+    "allDimensionalGolemsJson": {
+      "edges": [
+        {
+          "node": {
+            "battles": [
+              { "requiredMonster": null },
+              { "requiredMonster": null },
+              { "requiredMonster": null },
+              {
+                "requiredMonster": {
+                  "active_effect": {
+                    "description": "Increases damage dealt by [FFD428]60%[-].",
+                    "icon_name": "se_selfadddamagebyelement.png",
+                    "name": "Predator"
+                  },
+                  "active_skill": {
+                    "description": "Sweeps the floor with a massive wind-up key, damaging all enemies.",
+                    "icon_name": "bossdimensionr_active.png",
+                    "name": "Clockwork Stomp",
+                    "target": "MST_All"
+                  },
+                  "attack": 4620,
+                  "crit_dmg": 150,
+                  "crit_rate": 20,
+                  "defence": 1740,
+                  "element": "fire",
+                  "evolution": 1,
+                  "hp": 1450000,
+                  "level": 150,
+                  "icon_name": "BossDimensionR_large.png",
+                  "name": "Dimensional Ancient Golem",
+                  "recovery": 60000,
+                  "resist": 20,
+                  "stat_type": "Attacker",
+                  "super_skill": {
+                    "description": "Unleashes a powerful attack every few turns, then disables the enemy’s HP recovery for 3 turns.",
+                    "icon_name": "bossdimensionr_condition.png",
+                    "name": "Dimensional Collapse",
+                    "target": "MST_All"
+                  },
+                  "super_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to disable the enemy's HP recovery for [FFD428]3[-] turn(s).",
+                    "icon_name": "se_debufffinalvalueheal.png",
+                    "name": "Recovery Seal"
+                  },
+                  "uid": 707990732,
+                  "default_effect": {
+                    "description": "Increases damage dealt by [FFD428]50%[-].",
+                    "icon_name": "se_selfadddamagebyelement.png",
+                    "name": "Predator",
+                    "uid": 1139707382
+                  },
+                  "default_skill": {
+                    "description": "Brings its massive fist down upon a single target.",
+                    "icon_name": "bossdimension_default.png",
+                    "name": "Dimensional Strike",
+                    "target": "MST_One"
+                  },
+                  "boss_effects": [
+                    {
+                      "description": "Immune to seal and action-inhibiting effects.",
+                      "icon_name": "se_bossimmunegolemboss.png",
+                      "name": "Invincibility",
+                      "uid": 1760404847
+                    },
+                    {
+                      "description": "Greatly decreases the amount of damage taken from sap.",
+                      "icon_name": "se_bossreduceongoingdechp.png",
+                      "name": "Greater Sap Resistance",
+                      "uid": 1699805451
+                    },
+                    {
+                      "description": "Vastly increases attack power every [FFD428]3[-] turns.",
+                      "icon_name": "se_bossaddattackturnsquare.png",
+                      "name": "Dimensional Energy Absorption",
+                      "uid": 1079396907
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "Fire Dimension"
+          }
+        },
+        {
+          "node": {
+            "battles": [
+              { "requiredMonster": null },
+              { "requiredMonster": null },
+              { "requiredMonster": null },
+              {
+                "requiredMonster": {
+                  "active_effect": {
+                    "description": "Increases damage dealt by [FFD428]50%[-].",
+                    "icon_name": "se_selfadddamagebyelement.png",
+                    "name": "Predator"
+                  },
+                  "active_skill": {
+                    "description": "Sweeps the floor with a massive wind-up key, damaging all enemies.",
+                    "icon_name": "bossdimensionb_active.png",
+                    "name": "Clockwork Stomp",
+                    "target": "MST_All"
+                  },
+                  "attack": 4950,
+                  "crit_dmg": 150,
+                  "crit_rate": 20,
+                  "defence": 3600,
+                  "element": "water",
+                  "evolution": 1,
+                  "hp": 625000,
+                  "level": 150,
+                  "icon_name": "BossDimensionB_large.png",
+                  "name": "Dimensional Ancient Golem",
+                  "recovery": 45000,
+                  "resist": 20,
+                  "stat_type": "Defender",
+                  "super_skill": {
+                    "description": "Damages all enemies with a powerful attack when own HP drops below a certain level.",
+                    "icon_name": "bossdimensionb_condition.png",
+                    "name": "Dimensional Collapse",
+                    "target": "MST_All"
+                  },
+                  "super_effect": {
+                    "description": "Increases damage dealt by [FFD428]100%[-].",
+                    "icon_name": "se_selfadddamagebyelement.png",
+                    "name": "Predator"
+                  },
+                  "uid": 707990731,
+                  "default_effect": {
+                    "description": "Grants a [FFD428]90%[-] chance to cause fatigue in the enemy for [FFD428]3[-] turn(s). Fatigued foes gain nothing from blue souls.",
+                    "icon_name": "se_debuffmpcrystalrecovery.png",
+                    "name": "Fatigue",
+                    "uid": 875864806
+                  },
+                  "default_skill": {
+                    "description": "Brings its massive fist down upon a single target.",
+                    "icon_name": "bossdimension_default.png",
+                    "name": "Dimensional Strike",
+                    "target": "MST_One"
+                  },
+                  "boss_effects": [
+                    {
+                      "description": "Immune to seal and action-inhibiting effects.",
+                      "icon_name": "se_bossimmunegolemboss.png",
+                      "name": "Invincibility",
+                      "uid": 1760404847
+                    },
+                    {
+                      "description": "Greatly decreases the amount of damage taken from sap.",
+                      "icon_name": "se_bossreduceongoingdechp.png",
+                      "name": "Greater Sap Resistance",
+                      "uid": 1699805451
+                    },
+                    {
+                      "description": "Vastly increases attack power every [FFD428]3[-] turns.",
+                      "icon_name": "se_bossaddattackturnsquare.png",
+                      "name": "Dimensional Energy Absorption",
+                      "uid": 1079396907
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "Water Dimension"
+          }
+        },
+        {
+          "node": {
+            "battles": [
+              { "requiredMonster": null },
+              { "requiredMonster": null },
+              { "requiredMonster": null },
+              {
+                "requiredMonster": {
+                  "active_effect": {
+                    "description": "Grants a [FFD428]60%[-] chance to seal the enemy for [FFD428]3[-] turn(s). Sealed foes' passive skills do not activate.",
+                    "icon_name": "se_sealstatuseffect.png",
+                    "name": "Seal"
+                  },
+                  "active_skill": {
+                    "description": "Sweeps the floor with a massive wind-up key, damaging all enemies.",
+                    "icon_name": "bossdimensiong_active.png",
+                    "name": "Clockwork Stomp",
+                    "target": "MST_All"
+                  },
+                  "attack": 7250,
+                  "crit_dmg": 150,
+                  "crit_rate": 20,
+                  "defence": 5400,
+                  "element": "tree",
+                  "evolution": 1,
+                  "hp": 650000,
+                  "level": 150,
+                  "icon_name": "BossDimensionG_large.png",
+                  "name": "Dimensional Ancient Golem",
+                  "recovery": 60000,
+                  "resist": 20,
+                  "stat_type": "Tank",
+                  "super_skill": {
+                    "description": "Weakens the enemy for 2 turns with a powerful attack every few turns. Weakened foes have reduced attack and defense.",
+                    "icon_name": "bossdimensiong_condition.png",
+                    "name": "Dimensional Collapse",
+                    "target": "MST_All"
+                  },
+                  "super_effect": {
+                    "description": "Grants a [FFD428]80%[-] chance to weaken the enemy for [FFD428]2[-] turn(s). Weakened foes have reduced attack and defense.",
+                    "icon_name": "se_debuffattackanddefence.png",
+                    "name": "Weaken"
+                  },
+                  "uid": 707990730,
+                  "default_effect": {
+                    "description": "Grants a [FFD428]80%[-] chance to petrify target for [FFD428]2[-] turn(s). Petrified foes cannot act, but have increased defense.",
+                    "icon_name": "se_stunstone.png",
+                    "name": "Petrification",
+                    "uid": 497623074
+                  },
+                  "default_skill": {
+                    "description": "Brings its massive fist down upon a single target.",
+                    "icon_name": "bossdimension_default.png",
+                    "name": "Dimensional Strike",
+                    "target": "MST_One"
+                  },
+                  "boss_effects": [
+                    {
+                      "description": "Immune to seal and action-inhibiting effects.",
+                      "icon_name": "se_bossimmunegolemboss.png",
+                      "name": "Invincibility",
+                      "uid": 1760404847
+                    },
+                    {
+                      "description": "Greatly decreases the amount of damage taken from sap.",
+                      "icon_name": "se_bossreduceongoingdechp.png",
+                      "name": "Greater Sap Resistance",
+                      "uid": 1699805451
+                    },
+                    {
+                      "description": "Vastly increases attack power every [FFD428]3[-] turns.",
+                      "icon_name": "se_bossaddattackturnsquare.png",
+                      "name": "Dimensional Energy Absorption",
+                      "uid": 1079396907
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "Wood Dimension"
+          }
+        },
+        {
+          "node": {
+            "battles": [
+              { "requiredMonster": null },
+              { "requiredMonster": null },
+              { "requiredMonster": null },
+              {
+                "requiredMonster": {
+                  "active_effect": {
+                    "description": "Increases critical hit rate by [FFD428]50%[-].",
+                    "icon_name": "se_selfbuffcriticalprob.png",
+                    "name": "Stalker"
+                  },
+                  "active_skill": {
+                    "description": "Sweeps the floor with a massive wind-up key, damaging all enemies.",
+                    "icon_name": "bossdimension_active.png",
+                    "name": "Clockwork Stomp",
+                    "target": "MST_All"
+                  },
+                  "attack": 4050,
+                  "crit_dmg": 130,
+                  "crit_rate": 50,
+                  "defence": 1500,
+                  "element": "light",
+                  "evolution": 1,
+                  "hp": 1750000,
+                  "level": 150,
+                  "icon_name": "BossDimension_large.png",
+                  "name": "Dimensional Ancient Golem",
+                  "recovery": 60000,
+                  "resist": 20,
+                  "stat_type": "Recovery",
+                  "super_skill": {
+                    "description": "Unleashes a very powerful attack when own HP drops below a certain level, and resurrects the Guard Spheres.",
+                    "icon_name": "bossdimension_condition.png",
+                    "name": "Dimensional Collapse",
+                    "target": "MST_All"
+                  },
+                  "super_effect": {
+                    "description": "Resurrection",
+                    "icon_name": "se_nreducedamage.png",
+                    "name": "Resurrection"
+                  },
+                  "uid": 707990737,
+                  "default_effect": {
+                    "description": "Increases attack as each turn passes. Stacks up to [FFD428]8[-] turns.",
+                    "icon_name": "se_selfaddattackbyturnaccumulate.png",
+                    "name": "Perservere",
+                    "uid": 999800387
+                  },
+                  "default_skill": {
+                    "description": "Brings its massive fist down upon a single target.",
+                    "icon_name": "bossdimension_default.png",
+                    "name": "Dimensional Strike",
+                    "target": "MST_One"
+                  },
+                  "boss_effects": [
+                    {
+                      "description": "Immune to seal and action-inhibiting effects.",
+                      "icon_name": "se_bossimmunegolemboss.png",
+                      "name": "Invincibility",
+                      "uid": 1760404847
+                    },
+                    {
+                      "description": "Greatly decreases the amount of damage taken from sap.",
+                      "icon_name": "se_bossreduceongoingdechp.png",
+                      "name": "Greater Sap Resistance",
+                      "uid": 1699805451
+                    },
+                    {
+                      "description": "Vastly increases attack power every [FFD428]3[-] turns.",
+                      "icon_name": "se_bossaddattackturnsquare.png",
+                      "name": "Dimensional Energy Absorption",
+                      "uid": 1079396907
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "Light Dimension"
+          }
+        },
+        {
+          "node": {
+            "battles": [
+              { "requiredMonster": null },
+              { "requiredMonster": null },
+              { "requiredMonster": null },
+              {
+                "requiredMonster": {
+                  "active_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to inflict the enemy with two types of sap damage for [FFD428]5[-] turn(s). Sapped foes have decreased resistance.",
+                    "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+                    "name": "Sap"
+                  },
+                  "active_skill": {
+                    "description": "Sweeps the floor with a massive wind-up key, damaging all enemies.",
+                    "icon_name": "bossdimensiond_active.png",
+                    "name": "Clockwork Stomp",
+                    "target": "MST_All"
+                  },
+                  "attack": 5075,
+                  "crit_dmg": 150,
+                  "crit_rate": 20,
+                  "defence": 2250,
+                  "element": "dark",
+                  "evolution": 1,
+                  "hp": 1700000,
+                  "level": 150,
+                  "icon_name": "BossDimensionD_large.png",
+                  "name": "Dimensional Ancient Golem",
+                  "recovery": 67500,
+                  "resist": 20,
+                  "stat_type": "Tank",
+                  "super_skill": {
+                    "description": "Unleashes a very powerful attack when own HP drops below a certain level, and resurrects the Guard Spheres.",
+                    "icon_name": "bossdimensiond_condition.png",
+                    "name": "Dimensional Collapse",
+                    "target": "MST_All"
+                  },
+                  "super_effect": {
+                    "description": "Resurrection",
+                    "icon_name": "se_nreducedamage.png",
+                    "name": "Resurrection"
+                  },
+                  "uid": 707990736,
+                  "default_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to inflict the enemy with two types of sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+                    "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+                    "name": "Sap",
+                    "uid": 1350502304
+                  },
+                  "default_skill": {
+                    "description": "Brings its massive fist down upon a single target.",
+                    "icon_name": "bossdimension_default.png",
+                    "name": "Dimensional Strike",
+                    "target": "MST_One"
+                  },
+                  "boss_effects": [
+                    {
+                      "description": "Immune to seal and action-inhibiting effects.",
+                      "icon_name": "se_bossimmunegolemboss.png",
+                      "name": "Invincibility",
+                      "uid": 1760404847
+                    },
+                    {
+                      "description": "Greatly decreases the amount of damage taken from sap.",
+                      "icon_name": "se_bossreduceongoingdechp.png",
+                      "name": "Greater Sap Resistance",
+                      "uid": 1699805451
+                    },
+                    {
+                      "description": "Vastly increases attack power every [FFD428]3[-] turns.",
+                      "icon_name": "se_bossaddattackturnsquare.png",
+                      "name": "Dimensional Energy Absorption",
+                      "uid": 1079396907
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "Dark Dimension"
+          }
+        }
+      ]
+    }
+  }
+}

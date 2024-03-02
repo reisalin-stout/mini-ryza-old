@@ -54,6 +54,18 @@
       ]
     },
     {
+      "name": "titan-rank",
+      "description": "Check a clan for titan rank and status",
+      "options": [
+        {
+          "name": "clan-name",
+          "description": "The name of the clan",
+          "type": 3,
+          "required": true
+        }
+      ]
+    },
+    {
       "name": "bye",
       "description": "Say goodbye!"
     },

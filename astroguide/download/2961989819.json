@@ -1,0 +1,4094 @@
+{
+  "data": {
+    "allEffectsJson": {
+      "edges": [
+        {
+          "node": {
+            "name": "Grace of Life",
+            "uid": 259001514,
+            "description": "Increases allies' HP by [FFD428]20%[-].",
+            "icon_name": "se_leaderbuffhp.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Grace of Life",
+            "uid": 538383007,
+            "description": "Increases allies' HP by [FFD428]30%[-].",
+            "icon_name": "se_leaderbuffhp.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Grace of Life",
+            "uid": 2035201100,
+            "description": "Increases allies' HP by [FFD428]40%[-].",
+            "icon_name": "se_leaderbuffhp.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Fighting Spirit",
+            "uid": 1775607266,
+            "description": "Increases allies' attack power by [FFD428]20%[-].",
+            "icon_name": "se_leaderbuffattack.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Fighting Spirit",
+            "uid": 978222523,
+            "description": "Increases allies' attack power by [FFD428]30%[-].",
+            "icon_name": "se_leaderbuffattack.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Fighting Spirit",
+            "uid": 209972566,
+            "description": "Increases allies' attack power by [FFD428]40%[-].",
+            "icon_name": "se_leaderbuffattack.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Protector's Shield",
+            "uid": 1413709025,
+            "description": "Increases allies' defense by [FFD428]20%[-].",
+            "icon_name": "se_leaderbuffdefence.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Protector's Shield",
+            "uid": 616324284,
+            "description": "Increases allies' defense by [FFD428]30%[-].",
+            "icon_name": "se_leaderbuffdefence.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Protector's Shield",
+            "uid": 571870807,
+            "description": "Increases allies' defense by [FFD428]40%[-].",
+            "icon_name": "se_leaderbuffdefence.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Surging Vitality",
+            "uid": 262420116,
+            "description": "Increases allies' recovery by [FFD428]20%[-].",
+            "icon_name": "se_leaderbuffheal.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Surging Vitality",
+            "uid": 1070129119,
+            "description": "Increases allies' recovery by [FFD428]30%[-].",
+            "icon_name": "se_leaderbuffheal.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Critical Boost",
+            "uid": 1586458295,
+            "description": "Increases allies' critical hit rate by [FFD428]10%[-].",
+            "icon_name": "se_leaderbuffcriticalprob.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Critical Boost",
+            "uid": 2073030006,
+            "description": "Increases allies' critical hit rate by [FFD428]15%[-].",
+            "icon_name": "se_leaderbuffcriticalprob.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Critical Boost",
+            "uid": 91387940,
+            "description": "Increases allies' critical hit rate by [FFD428]20%[-].",
+            "icon_name": "se_leaderbuffcriticalprob.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Deathblow",
+            "uid": 819512821,
+            "description": "Increases allies' critical hit damage by [FFD428]30%[-].",
+            "icon_name": "se_leaderbuffcriticaldamage.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Deathblow",
+            "uid": 1644762306,
+            "description": "Increases allies' critical hit damage by [FFD428]40%[-].",
+            "icon_name": "se_leaderbuffcriticaldamage.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Deathblow",
+            "uid": 1541310743,
+            "description": "Increases allies' critical hit damage by [FFD428]50%[-].",
+            "icon_name": "se_leaderbuffcriticaldamage.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Firm Resolve",
+            "uid": 668735833,
+            "description": "Increases allies' resistance by [FFD428]10%[-].",
+            "icon_name": "se_leaderbuffresist.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Firm Resolve",
+            "uid": 1221950890,
+            "description": "Increases allies' resistance by [FFD428]15%[-].",
+            "icon_name": "se_leaderbuffresist.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Firm Resolve",
+            "uid": 606618020,
+            "description": "Increases allies' resistance by [FFD428]20%[-].",
+            "icon_name": "se_leaderbuffresist.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Discernment",
+            "uid": 2003567132,
+            "description": "Decreases enemies' resistance by [FFD428]10%[-].",
+            "icon_name": "se_leaderdebuffresisttoenemy.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Discernment",
+            "uid": 1538978355,
+            "description": "Decreases enemies' resistance by [FFD428]15%[-].",
+            "icon_name": "se_leaderdebuffresisttoenemy.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Discernment",
+            "uid": 2131104395,
+            "description": "Decreases enemies' resistance by [FFD428]20%[-].",
+            "icon_name": "se_leaderdebuffresisttoenemy.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Crimson Spirit's Blessing",
+            "uid": 1900445049,
+            "description": "Increases allies' red soul recovery by [FFD428]10%[-].",
+            "icon_name": "se_leaderbuffhpcrystalrecovery.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Crimson Spirit's Blessing",
+            "uid": 24734288,
+            "description": "Increases allies' red soul recovery by [FFD428]20%[-].",
+            "icon_name": "se_leaderbuffhpcrystalrecovery.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Azure Spirit's Blessing",
+            "uid": 2143540031,
+            "description": "Increases allies' blue soul recovery by [FFD428]20%[-].",
+            "icon_name": "se_leaderbuffmpcrystalrecovery.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Defensive Stance",
+            "uid": 1627115995,
+            "description": "Decreases enemies' attack power by [FFD428]20%[-].",
+            "icon_name": "se_leaderdebuffattacktoenemy.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Defensive Stance",
+            "uid": 277016852,
+            "description": "Decreases enemies' attack power by [FFD428]30%[-].",
+            "icon_name": "se_leaderdebuffattacktoenemy.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Defensive Stance",
+            "uid": 510279501,
+            "description": "Decreases enemies' attack power by [FFD428]35%[-].",
+            "icon_name": "se_leaderdebuffattacktoenemy.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Charging Stance",
+            "uid": 533183040,
+            "description": "Decreases enemies' defense by [FFD428]20%[-].",
+            "icon_name": "se_leaderdebuffdefencetoenemy.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Charging Stance",
+            "uid": 1872957937,
+            "description": "Decreases enemies' defense by [FFD428]30%[-].",
+            "icon_name": "se_leaderdebuffdefencetoenemy.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Charging Stance",
+            "uid": 2103528626,
+            "description": "Decreases enemies' defense by [FFD428]35%[-].",
+            "icon_name": "se_leaderdebuffdefencetoenemy.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Crisis Aversion",
+            "uid": 502626584,
+            "description": "Decreases enemies' critical hit rate by [FFD428]10%[-].",
+            "icon_name": "se_leaderdebuffcriticalprobtoenemy.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Crisis Aversion",
+            "uid": 26379351,
+            "description": "Decreases enemies' critical hit rate by [FFD428]15%[-].",
+            "icon_name": "se_leaderdebuffcriticalprobtoenemy.png",
+            "appearsAs": 4
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Up",
+            "uid": 1280942823,
+            "description": "Increases allies' attack power for [FFD428]2[-] turn(s).",
+            "icon_name": "se_buffattack.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Up",
+            "uid": 1835951850,
+            "description": "Increases allies' attack power for [FFD428]3[-] turn(s).",
+            "icon_name": "se_buffattack.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Up",
+            "uid": 1937203330,
+            "description": "Increases allies' defense for [FFD428]2[-] turn(s).",
+            "icon_name": "se_buffdefence.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Up",
+            "uid": 832580033,
+            "description": "Increases allies' defense for [FFD428]3[-] turn(s).",
+            "icon_name": "se_buffdefence.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Up",
+            "uid": 581948541,
+            "description": "Increases allies' defense for [FFD428]2[-] turn(s).",
+            "icon_name": "se_buffdefence.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Recovery Up",
+            "uid": 1386149282,
+            "description": "Imbues all allies with a [FFD428]2[-]-turn recovery buff that increases HP recovered from all sources (souls, skills, gems, etc.).",
+            "icon_name": "se_bufffinalvalueheal.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 506296136,
+            "description": "Grants a [FFD428]40%[-] chance to reduce the enemy's attack for [FFD428]1[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 2059355506,
+            "description": "Grants a [FFD428]60%[-] chance to reduce the enemy's attack for [FFD428]1[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 212377601,
+            "description": "Grants a [FFD428]70%[-] chance to reduce the enemy's attack for [FFD428]1[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 1936813750,
+            "description": "Grants a [FFD428]80%[-] chance to reduce the enemy's attack for [FFD428]1[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 1290500362,
+            "description": "Grants a [FFD428]100%[-] chance to reduce the enemy's attack for [FFD428]1[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 1044033685,
+            "description": "Grants a [FFD428]40%[-] chance to reduce the enemy's attack for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 159086454,
+            "description": "Grants a [FFD428]50%[-] chance to reduce the enemy's attack for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 1786656907,
+            "description": "Grants a [FFD428]60%[-] chance to reduce the enemy's attack for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 363803446,
+            "description": "Grants a [FFD428]70%[-] chance to reduce the enemy's attack for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 1360632705,
+            "description": "Grants a [FFD428]80%[-] chance to reduce the enemy's attack for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 1484882162,
+            "description": "Grants a [FFD428]90%[-] chance to reduce the enemy's attack for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 2087860691,
+            "description": "Grants a [FFD428]100%[-] chance to reduce the enemy's attack for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 427080067,
+            "description": "Grants a [FFD428]30%[-] chance to reduce the enemy's attack for [FFD428]3[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 1418453994,
+            "description": "Grants a [FFD428]60%[-] chance to reduce the enemy's attack for [FFD428]3[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 1613799147,
+            "description": "Grants a [FFD428]70%[-] chance to reduce the enemy's attack for [FFD428]3[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 747272774,
+            "description": "Grants a [FFD428]80%[-] chance to reduce the enemy's attack for [FFD428]3[-] turn(s).",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 467479711,
+            "description": "Critical hits have a [FFD428]80%[-] chance to lower the enemy's attack for [FFD428]2[-] turns.",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 1745816141,
+            "description": "Critical hits lower the enemy's attack for [FFD428]2[-] turns.",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Down",
+            "uid": 550055318,
+            "description": "Critical hits lower the enemy's attack for [FFD428]3[-] turns.",
+            "icon_name": "se_debuffattack.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 138611924,
+            "description": "Grants a [FFD428]70%[-] chance to reduce the enemy's defense for [FFD428]1[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 1955780075,
+            "description": "Grants a [FFD428]80%[-] chance to reduce the enemy's defense for [FFD428]1[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 923237906,
+            "description": "Grants a [FFD428]40%[-] chance to reduce the enemy's defense for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 332171597,
+            "description": "Grants a [FFD428]50%[-] chance to reduce the enemy's defense for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 771685666,
+            "description": "Grants a [FFD428]60%[-] chance to reduce the enemy's defense for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 1671574651,
+            "description": "Grants a [FFD428]70%[-] chance to reduce the enemy's defense for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 174612356,
+            "description": "Grants a [FFD428]80%[-] chance to reduce the enemy's defense for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 1611546977,
+            "description": "Grants a [FFD428]90%[-] chance to reduce the enemy's defense for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 163681298,
+            "description": "Grants a [FFD428]100%[-] chance to reduce the enemy's defense for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 1836403419,
+            "description": "Grants a [FFD428]60%[-] chance to reduce the enemy's defense for [FFD428]3[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 1427958492,
+            "description": "Grants a [FFD428]70%[-] chance to reduce the enemy's defense for [FFD428]3[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 269526221,
+            "description": "Grants a [FFD428]80%[-] chance to reduce the enemy's defense for [FFD428]3[-] turn(s).",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 180706304,
+            "description": "Critical hits lower the enemy's defense for [FFD428]2[-] turns.",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Weaken",
+            "uid": 1396612732,
+            "description": "Grants a [FFD428]60%[-] chance to weaken the enemy for [FFD428]2[-] turn(s). Weakened foes have reduced attack and defense.",
+            "icon_name": "se_debuffattackanddefence.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Weaken",
+            "uid": 996927581,
+            "description": "Grants a [FFD428]70%[-] chance to weaken the enemy for [FFD428]2[-] turn(s). Weakened foes have reduced attack and defense.",
+            "icon_name": "se_debuffattackanddefence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Weaken",
+            "uid": 1777434518,
+            "description": "Grants a [FFD428]80%[-] chance to weaken the enemy for [FFD428]2[-] turn(s). Weakened foes have reduced attack and defense.",
+            "icon_name": "se_debuffattackanddefence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Weaken",
+            "uid": 1342738809,
+            "description": "Grants a [FFD428]60%[-] chance to weaken the enemy for [FFD428]3[-] turn(s). Weakened foes have reduced attack and defense.",
+            "icon_name": "se_debuffattackanddefence.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Recovery Seal",
+            "uid": 926850062,
+            "description": "Grants a [FFD428]40%[-] chance to disable the enemy's HP recovery for [FFD428]1[-] turn(s).",
+            "icon_name": "se_debufffinalvalueheal.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Recovery Seal",
+            "uid": 1686882190,
+            "description": "Grants a [FFD428]60%[-] chance to disable the enemy's HP recovery for [FFD428]1[-] turn(s).",
+            "icon_name": "se_debufffinalvalueheal.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Recovery Seal",
+            "uid": 610695696,
+            "description": "Grants a [FFD428]80%[-] chance to disable the enemy's HP recovery for [FFD428]1[-] turn(s).",
+            "icon_name": "se_debufffinalvalueheal.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Recovery Seal",
+            "uid": 1487850359,
+            "description": "Grants a [FFD428]60%[-] chance to disable the enemy's HP recovery for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debufffinalvalueheal.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Recovery Seal",
+            "uid": 1109405133,
+            "description": "Grants a [FFD428]80%[-] chance to disable the enemy's HP recovery for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debufffinalvalueheal.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Recovery Seal",
+            "uid": 1070376253,
+            "description": "Grants a [FFD428]100%[-] chance to disable the enemy's HP recovery for [FFD428]2[-] turn(s).",
+            "icon_name": "se_debufffinalvalueheal.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Recovery Seal",
+            "uid": 613374353,
+            "description": "Grants a [FFD428]90%[-] chance to disable the enemy's HP recovery for [FFD428]3[-] turn(s).",
+            "icon_name": "se_debufffinalvalueheal.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Recovery Seal",
+            "uid": 1706659720,
+            "description": "Grants a [FFD428]100%[-] chance to disable the enemy's HP recovery for [FFD428]3[-] turn(s).",
+            "icon_name": "se_debufffinalvalueheal.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Fatigue",
+            "uid": 368153810,
+            "description": "Grants a [FFD428]40%[-] chance to cause fatigue in the enemy for [FFD428]1[-] turn(s). Fatigued foes gain nothing from blue souls.",
+            "icon_name": "se_debuffmpcrystalrecovery.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Fatigue",
+            "uid": 1937581564,
+            "description": "Grants a [FFD428]60%[-] chance to cause fatigue in the enemy for [FFD428]1[-] turn(s). Fatigued foes gain nothing from blue souls.",
+            "icon_name": "se_debuffmpcrystalrecovery.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Fatigue",
+            "uid": 1271443615,
+            "description": "Grants a [FFD428]60%[-] chance to cause fatigue in the enemy for [FFD428]2[-] turn(s). Fatigued foes gain nothing from blue souls.",
+            "icon_name": "se_debuffmpcrystalrecovery.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Fatigue",
+            "uid": 619567820,
+            "description": "Grants a [FFD428]70%[-] chance to cause fatigue in the enemy for [FFD428]2[-] turn(s). Fatigued foes gain nothing from blue souls.",
+            "icon_name": "se_debuffmpcrystalrecovery.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Fatigue",
+            "uid": 2099262345,
+            "description": "Grants a [FFD428]80%[-] chance to cause fatigue in the enemy for [FFD428]2[-] turn(s). Fatigued foes gain nothing from blue souls.",
+            "icon_name": "se_debuffmpcrystalrecovery.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Fatigue",
+            "uid": 276527464,
+            "description": "Grants a [FFD428]80%[-] chance to cause fatigue in the enemy for [FFD428]3[-] turn(s). Fatigued foes gain nothing from blue souls.",
+            "icon_name": "se_debuffmpcrystalrecovery.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Fatigue",
+            "uid": 1718897830,
+            "description": "Grants a [FFD428]100%[-] chance to cause fatigue in the enemy for [FFD428]3[-] turn(s). Fatigued foes gain nothing from blue souls.",
+            "icon_name": "se_debuffmpcrystalrecovery.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Blind",
+            "uid": 1279406186,
+            "description": "Grants a [FFD428]60%[-] chance to blind the enemy for [FFD428]1[-] turn(s). Blinded foes' critical hit rate and damage are reduced.",
+            "icon_name": "se_debuffcriticalprobanddamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Blind",
+            "uid": 1066463695,
+            "description": "Grants a [FFD428]70%[-] chance to blind the enemy for [FFD428]1[-] turn(s). Blinded foes' critical hit rate and damage are reduced.",
+            "icon_name": "se_debuffcriticalprobanddamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Blind",
+            "uid": 1349834745,
+            "description": "Grants a [FFD428]60%[-] chance to blind the enemy for [FFD428]2[-] turn(s). Blinded foes' critical hit rate and damage are reduced.",
+            "icon_name": "se_debuffcriticalprobanddamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Blind",
+            "uid": 1508752716,
+            "description": "Grants a [FFD428]70%[-] chance to blind the enemy for [FFD428]2[-] turn(s). Blinded foes' critical hit rate and damage are reduced.",
+            "icon_name": "se_debuffcriticalprobanddamage.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Blind",
+            "uid": 1893569871,
+            "description": "Grants a [FFD428]80%[-] chance to blind the enemy for [FFD428]2[-] turn(s). Blinded foes' critical hit rate and damage are reduced.",
+            "icon_name": "se_debuffcriticalprobanddamage.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Blind",
+            "uid": 554138027,
+            "description": "Grants a [FFD428]100%[-] chance to blind the enemy for [FFD428]2[-] turn(s). Blinded foes' critical hit rate and damage are reduced.",
+            "icon_name": "se_debuffcriticalprobanddamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Blind",
+            "uid": 850236837,
+            "description": "Grants a [FFD428]70%[-] chance to blind the enemy for [FFD428]3[-] turn(s). Blinded foes' critical hit rate and damage are reduced.",
+            "icon_name": "se_debuffcriticalprobanddamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Blind",
+            "uid": 1251398134,
+            "description": "Grants a [FFD428]80%[-] chance to blind the enemy for [FFD428]3[-] turn(s). Blinded foes' critical hit rate and damage are reduced.",
+            "icon_name": "se_debuffcriticalprobanddamage.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Blind",
+            "uid": 320291771,
+            "description": "Critical hits have a [FFD428]100%[-] chance to blind the enemy for [FFD428]2[-] turn(s). Blinded foes' critical hit rate and damage are reduced.",
+            "icon_name": "se_debuffcriticalprobanddamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Blind",
+            "uid": 110325536,
+            "description": "Critical hits have a [FFD428]100%[-] chance to blind the enemy for [FFD428]3[-] turn(s). Blinded foes' critical hit rate and damage are reduced.",
+            "icon_name": "se_debuffcriticalprobanddamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Buff Breaker",
+            "uid": 696271982,
+            "description": "Grants a [FFD428]100%[-] chance to dispel all enemy enhancements.",
+            "icon_name": "se_clearbuff.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Purification",
+            "uid": 880276133,
+            "description": "Grants a [FFD428]100%[-] chance to cleanse all allies of all negative effects.",
+            "icon_name": "se_cleardebuff.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Purification",
+            "uid": 1132704514,
+            "description": "Grants a [FFD428]100%[-] chance to cleanse all allies of all negative effects.",
+            "icon_name": "se_cleardebuff.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Shield Breaker",
+            "uid": 2005813404,
+            "description": "Grants a [FFD428]100%[-] chance to dispel enemy shields.",
+            "icon_name": "se_clearshield.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Full Buff Breaker",
+            "uid": 1896041651,
+            "description": "Grants a [FFD428]100%[-] chance to dispel all enemy enhancements including shields and immunity.",
+            "icon_name": "se_clearbuffshield.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Full Buff Breaker",
+            "uid": 1327349436,
+            "description": "Grants a [FFD428]90%[-] chance to dispel all enemy enhancements including shields and immunity.",
+            "icon_name": "se_clearbuffshield.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Full Buff Breaker",
+            "uid": 323483248,
+            "description": "Grants a [FFD428]70%[-] chance to dispel all enemy enhancements including shields and immunity.",
+            "icon_name": "se_clearbuffshield.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Vigor",
+            "uid": 1458515319,
+            "description": "Restores a set amount of allies' HP for [FFD428]2[-] turns.",
+            "icon_name": "se_ongoinginchp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Vigor",
+            "uid": 1067432773,
+            "description": "Restores a large amount of allies' HP for [FFD428]2[-] turns.",
+            "icon_name": "se_ongoinginchp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Vigor",
+            "uid": 499305170,
+            "description": "Restores a large amount of allies' HP for [FFD428]3[-] turns.",
+            "icon_name": "se_ongoinginchp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Zeal",
+            "uid": 1199622354,
+            "description": "Restores some of allies' SP for [FFD428]2[-] turn(s).",
+            "icon_name": "se_ongoingincmp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Zeal",
+            "uid": 954601492,
+            "description": "Restores a large amount of allies' SP for [FFD428]3[-] turns.",
+            "icon_name": "se_ongoingincmp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1045782684,
+            "description": "Grants a [FFD428]40%[-] chance to inflict the enemy with sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 438475672,
+            "description": "Grants a [FFD428]60%[-] chance to inflict the enemy with sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1142949569,
+            "description": "Grants a [FFD428]70%[-] chance to inflict the enemy with sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 348522344,
+            "description": "Grants a [FFD428]100%[-] chance to inflict the enemy with sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 809655765,
+            "description": "Grants a [FFD428]40%[-] chance to inflict the enemy with sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 407879262,
+            "description": "Grants a [FFD428]50%[-] chance to inflict the enemy with sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1421710471,
+            "description": "Grants a [FFD428]60%[-] chance to inflict the enemy with sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 81935824,
+            "description": "Grants a [FFD428]70%[-] chance to inflict the enemy with sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 107625537,
+            "description": "Grants a [FFD428]80%[-] chance to inflict the enemy with sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1473799704,
+            "description": "Grants a [FFD428]90%[-] chance to inflict the enemy with sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1498583787,
+            "description": "Grants a [FFD428]100%[-] chance to inflict the enemy with sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 454899596,
+            "description": "Grants a [FFD428]60%[-] chance to inflict the enemy with sap damage for [FFD428]3[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 757377181,
+            "description": "Grants a [FFD428]100%[-] chance to inflict the enemy with sap damage for [FFD428]4[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdechppercentfrommaxhp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1997433354,
+            "description": "Grants a [FFD428]50%[-] chance to inflict the enemy with two types of sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1944366293,
+            "description": "Grants a [FFD428]60%[-] chance to inflict the enemy with two types of sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 9529576,
+            "description": "Grants a [FFD428]70%[-] chance to inflict the enemy with two types of sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1697179883,
+            "description": "Grants a [FFD428]80%[-] chance to inflict the enemy with two types of sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 959507349,
+            "description": "Grants a [FFD428]100%[-] chance to inflict the enemy with two types of sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1527156148,
+            "description": "Grants a [FFD428]40%[-] chance to inflict the enemy with two types of sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 729771641,
+            "description": "Grants a [FFD428]50%[-] chance to inflict the enemy with two types of sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 258052454,
+            "description": "Grants a [FFD428]60%[-] chance to inflict the enemy with two types of sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 393503979,
+            "description": "Grants a [FFD428]70%[-] chance to inflict the enemy with two types of sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 853337320,
+            "description": "Grants a [FFD428]80%[-] chance to inflict the enemy with two types of sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1100558549,
+            "description": "Grants a [FFD428]90%[-] chance to inflict the enemy with two types of sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 31352368,
+            "description": "Grants a [FFD428]100%[-] chance to inflict the enemy with two types of sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1549922746,
+            "description": "Grants a [FFD428]60%[-] chance to inflict the enemy with three types of sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingtripledechppercentfrommaxhp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 444858404,
+            "description": "Grants a [FFD428]80%[-] chance to inflict the enemy with three types of sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingtripledechppercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 727731524,
+            "description": "Grants a [FFD428]100%[-] chance to inflict the enemy with three types of sap damage for [FFD428]1[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingtripledechppercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 1241774331,
+            "description": "Grants a [FFD428]80%[-] chance to inflict the enemy with three types of sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingtripledechppercentfrommaxhp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Sap",
+            "uid": 466065424,
+            "description": "Grants a [FFD428]90%[-] chance to inflict the enemy with three types of sap damage for [FFD428]2[-] turn(s). Sapped foes have decreased resistance.",
+            "icon_name": "se_ongoingtripledechppercentfrommaxhp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Thirst",
+            "uid": 367510676,
+            "description": "Grants a [FFD428]40%[-] chance to reduce target's skill gauge by [FFD428]10%[-] for [FFD428]1[-] turns.",
+            "icon_name": "se_ongoingdecmp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Thirst",
+            "uid": 1582308348,
+            "description": "Grants a [FFD428]60%[-] chance to reduce target's skill gauge by [FFD428]10%[-] for [FFD428]1[-] turns.",
+            "icon_name": "se_ongoingdecmp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Thirst",
+            "uid": 820800504,
+            "description": "Grants a [FFD428]80%[-] chance to reduce target's skill gauge by [FFD428]10%[-] for [FFD428]1[-] turns.",
+            "icon_name": "se_ongoingdecmp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Thirst",
+            "uid": 346655781,
+            "description": "Grants a [FFD428]80%[-] chance to reduce target's skill gauge by [FFD428]20%[-] for [FFD428]1[-] turns.",
+            "icon_name": "se_ongoingdecmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Thirst",
+            "uid": 1090570540,
+            "description": "Grants a [FFD428]80%[-] chance to reduce target's skill gauge by [FFD428]20%[-] for [FFD428]2[-] turns.",
+            "icon_name": "se_ongoingdecmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Thirst",
+            "uid": 291658208,
+            "description": "Grants a [FFD428]100%[-] chance to reduce target's skill gauge by [FFD428]20%[-] for [FFD428]2[-] turns.",
+            "icon_name": "se_ongoingdecmp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Thirst",
+            "uid": 986778078,
+            "description": "Grants a [FFD428]50%[-] chance to reduce target's skill gauge by [FFD428]30%[-] for [FFD428]2[-] turns.",
+            "icon_name": "se_ongoingdecmp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Thirst",
+            "uid": 259039335,
+            "description": "Grants a [FFD428]60%[-] chance to reduce target's skill gauge by [FFD428]30%[-] for [FFD428]2[-] turns.",
+            "icon_name": "se_ongoingdecmp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Thirst",
+            "uid": 1609648885,
+            "description": "Grants a [FFD428]80%[-] chance to reduce target's skill gauge by [FFD428]30%[-] for [FFD428]2[-] turns.",
+            "icon_name": "se_ongoingdecmp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 1653530544,
+            "description": "Grants a [FFD428]20%[-] chance to stun the enemy for [FFD428]1[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 1211599972,
+            "description": "Grants a [FFD428]40%[-] chance to stun the enemy for [FFD428]1[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 1160562213,
+            "description": "Grants a [FFD428]50%[-] chance to stun the enemy for [FFD428]1[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 642514356,
+            "description": "Grants a [FFD428]60%[-] chance to stun the enemy for [FFD428]1[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 237465279,
+            "description": "Grants a [FFD428]70%[-] chance to stun the enemy for [FFD428]1[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 1511697232,
+            "description": "Grants a [FFD428]80%[-] chance to stun the enemy for [FFD428]1[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 159104140,
+            "description": "Grants a [FFD428]100%[-] chance to stun the enemy for [FFD428]1[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 1856987979,
+            "description": "Grants a [FFD428]40%[-] chance to stun the enemy for [FFD428]2[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 610886376,
+            "description": "Grants a [FFD428]50%[-] chance to stun the enemy for [FFD428]2[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 1801297945,
+            "description": "Grants a [FFD428]60%[-] chance to stun the enemy for [FFD428]2[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 1463450466,
+            "description": "Grants a [FFD428]70%[-] chance to stun the enemy for [FFD428]2[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 1674931599,
+            "description": "Grants a [FFD428]80%[-] chance to stun the enemy for [FFD428]2[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 1154943902,
+            "description": "Grants a [FFD428]90%[-] chance to stun the enemy for [FFD428]2[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 108409397,
+            "description": "Grants a [FFD428]100%[-] chance to stun the enemy for [FFD428]2[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 444917790,
+            "description": "Critical hits have a [FFD428]100%[-] chance to stun the enemy for [FFD428]1[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 1046835580,
+            "description": "Critical hits have a [FFD428]90%[-] chance to stun the enemy for [FFD428]2[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 453081227,
+            "description": "Critical hits have a [FFD428]100%[-] chance to stun the enemy for [FFD428]2[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 1111410036,
+            "description": "Grants a [FFD428]60%[-] chance to shock target for [FFD428]1[-] turn(s). Shocked foes cannot act and have reduced defense.",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 1712651845,
+            "description": "Grants a [FFD428]70%[-] chance to shock target for [FFD428]1[-] turn(s). Shocked foes cannot act and have reduced defense.",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 777847848,
+            "description": "Grants a [FFD428]80%[-] chance to shock target for [FFD428]1[-] turn(s). Shocked foes cannot act and have reduced defense.",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 1638683698,
+            "description": "Grants a [FFD428]100%[-] chance to shock target for [FFD428]1[-] turn(s). Shocked foes cannot act and have reduced defense.",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 1431361137,
+            "description": "Grants a [FFD428]40%[-] chance to shock target for [FFD428]2[-] turn(s). Shocked foes cannot act and have reduced defense.",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 168824722,
+            "description": "Grants a [FFD428]50%[-] chance to shock target for [FFD428]2[-] turn(s). Shocked foes cannot act and have reduced defense.",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 908471247,
+            "description": "Grants a [FFD428]60%[-] chance to shock target for [FFD428]2[-] turn(s). Shocked foes cannot act and have reduced defense.",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 911447952,
+            "description": "Grants a [FFD428]70%[-] chance to shock target for [FFD428]2[-] turn(s). Shocked foes cannot act and have reduced defense.",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 609673205,
+            "description": "Grants a [FFD428]80%[-] chance to shock target for [FFD428]2[-] turn(s). Shocked foes cannot act and have reduced defense.",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 1037835683,
+            "description": "Grants a [FFD428]100%[-] chance to shock target for [FFD428]2[-] turn(s). Shocked foes cannot act and have reduced defense.",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 2026873167,
+            "description": "Critical hits have a [FFD428]70%[-] chance to Shock the enemy for [FFD428]1[-] turn(s).",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Shock",
+            "uid": 570639218,
+            "description": "Critical hits shock the enemy for [FFD428]1[-] turn(s). Shocked foes cannot act and have reduced defense.",
+            "icon_name": "se_stunelectricshock.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Petrification",
+            "uid": 1479897946,
+            "description": "Grants a [FFD428]40%[-] chance to petrify target for [FFD428]1[-] turn(s). Petrified foes cannot act, but have increased defense.",
+            "icon_name": "se_stunstone.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Petrification",
+            "uid": 1321379232,
+            "description": "Grants a [FFD428]60%[-] chance to petrify target for [FFD428]1[-] turn(s). Petrified foes cannot act, but have increased defense.",
+            "icon_name": "se_stunstone.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Petrification",
+            "uid": 1145664862,
+            "description": "Grants a [FFD428]80%[-] chance to petrify target for [FFD428]1[-] turn(s). Petrified foes cannot act, but have increased defense.",
+            "icon_name": "se_stunstone.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Petrification",
+            "uid": 1767582570,
+            "description": "Grants a [FFD428]100%[-] chance to petrify target for [FFD428]1[-] turn(s). Petrified foes cannot act, but have increased defense.",
+            "icon_name": "se_stunstone.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Petrification",
+            "uid": 502015473,
+            "description": "Grants a [FFD428]80%[-] chance to petrify target for [FFD428]2[-] turn(s). Petrified foes cannot act, but have increased defense.",
+            "icon_name": "se_stunstone.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Petrification",
+            "uid": 260348398,
+            "description": "Critical hits have a [FFD428]100%[-] chance to petrify the enemy for [FFD428]1[-] turn(s). Petrified foes cannot act, but have increased defense.",
+            "icon_name": "se_stunstone.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sleep",
+            "uid": 842184278,
+            "description": "Grants a [FFD428]40%[-] chance to put target to sleep for [FFD428]1[-] turn(s). Sleeping foes wake when struck by a critical hit.",
+            "icon_name": "se_stunsleep.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Sleep",
+            "uid": 731163782,
+            "description": "Grants a [FFD428]60%[-] chance to put target to sleep for [FFD428]1[-] turn(s). Sleeping foes wake when struck by a critical hit.",
+            "icon_name": "se_stunsleep.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sleep",
+            "uid": 200851865,
+            "description": "Grants a [FFD428]70%[-] chance to put target to sleep for [FFD428]1[-] turn(s). Sleeping foes wake when struck by a critical hit.",
+            "icon_name": "se_stunsleep.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sleep",
+            "uid": 950281082,
+            "description": "Grants a [FFD428]80%[-] chance to put target to sleep for [FFD428]1[-] turn(s). Sleeping foes wake when struck by a critical hit.",
+            "icon_name": "se_stunsleep.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sleep",
+            "uid": 1422275507,
+            "description": "Grants a [FFD428]90%[-] chance to put target to sleep for [FFD428]1[-] turn(s). Sleeping foes wake when struck by a critical hit.",
+            "icon_name": "se_stunsleep.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Sleep",
+            "uid": 1134173950,
+            "description": "Grants a [FFD428]100%[-] chance to put target to sleep for [FFD428]1[-] turn(s). Sleeping foes wake when struck by a critical hit.",
+            "icon_name": "se_stunsleep.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sleep",
+            "uid": 781202250,
+            "description": "Grants a [FFD428]70%[-] chance to put target to sleep for [FFD428]2[-] turn(s). Sleeping foes wake when struck by a critical hit.",
+            "icon_name": "se_stunsleep.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sleep",
+            "uid": 1654453945,
+            "description": "Grants a [FFD428]80%[-] chance to put target to sleep for [FFD428]2[-] turn(s). Sleeping foes wake when struck by a critical hit.",
+            "icon_name": "se_stunsleep.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Sleep",
+            "uid": 1248620615,
+            "description": "Grants a [FFD428]100%[-] chance to put target to sleep for [FFD428]2[-] turn(s). Sleeping foes wake when struck by a critical hit.",
+            "icon_name": "se_stunsleep.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Sleep",
+            "uid": 1203829744,
+            "description": "Critical hits have a [FFD428]100%[-] chance to put the enemy to sleep for [FFD428]1[-] turn(s). Sleeping foes wake when struck by a critical hit.",
+            "icon_name": "se_stunsleep.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Sleep",
+            "uid": 1875234153,
+            "description": "Critical hits have a [FFD428]100%[-] chance to put the enemy to sleep for [FFD428]2[-] turn(s). Sleeping foes wake when struck by a critical hit.",
+            "icon_name": "se_stunsleep.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Silence",
+            "uid": 2098662918,
+            "description": "Grants a [FFD428]20%[-] chance to silence the enemy for [FFD428]1[-] turn(s). Silenced foes cannot use their active skill.",
+            "icon_name": "se_silence.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Silence",
+            "uid": 203723914,
+            "description": "Grants a [FFD428]60%[-] chance to silence the enemy for [FFD428]1[-] turn(s). Silenced foes cannot use their active skill.",
+            "icon_name": "se_silence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Silence",
+            "uid": 1254214896,
+            "description": "Grants a [FFD428]80%[-] chance to silence the enemy for [FFD428]1[-] turn(s). Silenced foes cannot use their active skill.",
+            "icon_name": "se_silence.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Silence",
+            "uid": 1377129148,
+            "description": "Grants a [FFD428]100%[-] chance to silence the enemy for [FFD428]1[-] turn(s). Silenced foes cannot use their active skill.",
+            "icon_name": "se_silence.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Silence",
+            "uid": 415713473,
+            "description": "Grants a [FFD428]60%[-] chance to silence the enemy for [FFD428]2[-] turn(s). Silenced foes cannot use their active skill.",
+            "icon_name": "se_silence.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Silence",
+            "uid": 1513939627,
+            "description": "Grants a [FFD428]80%[-] chance to silence the enemy for [FFD428]2[-] turn(s). Silenced foes cannot use their active skill.",
+            "icon_name": "se_silence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Silence",
+            "uid": 1812918120,
+            "description": "Grants a [FFD428]100%[-] chance to silence the enemy for [FFD428]3[-] turn(s). Silenced foes cannot use their active skill.",
+            "icon_name": "se_silence.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 1194501805,
+            "description": "Applies an Morale Boost buff to allies for [FFD428]2[-] turns. With this buff, allies will recover SP proportional to the amount of damage they deal.",
+            "icon_name": "se_healmympbyenemydamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 1907213462,
+            "description": "Applies an Morale Boost buff to allies for [FFD428]3[-] turns. With this buff, allies will recover SP proportional to the amount of damage they deal.",
+            "icon_name": "se_healmympbyenemydamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Resilience",
+            "uid": 1044409202,
+            "description": "Applies a Resilience buff to allies for [FFD428]2[-] turns. With this buff, allies will gain SP proportional to the amount of damage they take.",
+            "icon_name": "se_recoverymympbymydamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Resilience",
+            "uid": 1384943441,
+            "description": "Applies a Resilience buff to allies for [FFD428]3[-] turns. With this buff, allies will gain SP proportional to the amount of damage they take.",
+            "icon_name": "se_recoverymympbymydamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 652513091,
+            "description": "Grants a shield to allies for [FFD428]2[-] turn(s).",
+            "icon_name": "se_shielddamagebyabsolute.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 1425862382,
+            "description": "Grants a shield to allies proportional to own max HP for [FFD428]2[-] turn(s).",
+            "icon_name": "se_shielddamagebymaxhp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 1573699731,
+            "description": "Grants a shield to allies proportional to own max HP for [FFD428]3[-] turn(s).",
+            "icon_name": "se_shielddamagebymaxhp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 1986621265,
+            "description": "Grants a shield to allies proportional to own max level for [FFD428]2[-] turn(s).",
+            "icon_name": "se_shielddamagebylev.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 726925770,
+            "description": "Grants a shield to allies proportional to own max level for [FFD428]3[-] turn(s).",
+            "icon_name": "se_shielddamagebylev.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Dominance",
+            "uid": 2080021489,
+            "description": "Applies a Dominance buff to allies for [FFD428]2[-] turns. With this buff, allies will reduce the enemy's SP proportional to the amount of damage they deal.",
+            "icon_name": "se_decenemympbyenemydamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Dominance",
+            "uid": 1494176712,
+            "description": "Applies a Dominance buff to allies for [FFD428]3[-] turns. With this buff, allies will reduce the enemy's SP proportional to the amount of damage they deal.",
+            "icon_name": "se_decenemympbyenemydamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Taunt",
+            "uid": 1282573707,
+            "description": "Grants a [FFD428]20%[-] chance to lower the enemy's attack and draw its attention for [FFD428]1[-] turn(s).",
+            "icon_name": "se_provokeme.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Taunt",
+            "uid": 61476881,
+            "description": "Grants a [FFD428]40%[-] chance to lower the enemy's attack and draw its attention for [FFD428]1[-] turn(s).",
+            "icon_name": "se_provokeme.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Taunt",
+            "uid": 1931070255,
+            "description": "Grants a [FFD428]60%[-] chance to lower the enemy's attack and draw its attention for [FFD428]1[-] turn(s).",
+            "icon_name": "se_provokeme.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Taunt",
+            "uid": 827601540,
+            "description": "Grants a [FFD428]70%[-] chance to lower the enemy's attack and draw its attention for [FFD428]1[-] turn(s).",
+            "icon_name": "se_provokeme.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Taunt",
+            "uid": 928834765,
+            "description": "Grants a [FFD428]80%[-] chance to lower the enemy's attack and draw its attention for [FFD428]1[-] turn(s).",
+            "icon_name": "se_provokeme.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Taunt",
+            "uid": 1368855419,
+            "description": "Grants a [FFD428]100%[-] chance to lower the enemy's attack and draw its attention for [FFD428]1[-] turn(s).",
+            "icon_name": "se_provokeme.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Taunt",
+            "uid": 1980378639,
+            "description": "Grants a [FFD428]50%[-] chance to lower the enemy's attack and draw its attention for [FFD428]2[-] turn(s).",
+            "icon_name": "se_provokeme.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Taunt",
+            "uid": 253128196,
+            "description": "Grants a [FFD428]80%[-] chance to lower the enemy's attack and draw its attention for [FFD428]2[-] turn(s).",
+            "icon_name": "se_provokeme.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Taunt",
+            "uid": 1326618520,
+            "description": "Grants a [FFD428]100%[-] chance to lower the enemy's attack and draw its attention for [FFD428]2[-] turn(s).",
+            "icon_name": "se_provokeme.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Stalker",
+            "uid": 1182834109,
+            "description": "Increases critical hit rate by [FFD428]20%[-].",
+            "icon_name": "se_selfbuffcriticalprob.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stalker",
+            "uid": 1326528114,
+            "description": "Increases critical hit rate by [FFD428]30%[-].",
+            "icon_name": "se_selfbuffcriticalprob.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Stalker",
+            "uid": 930717378,
+            "description": "Increases critical hit rate by [FFD428]50%[-].",
+            "icon_name": "se_selfbuffcriticalprob.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Dark Stalker",
+            "uid": 1381940795,
+            "description": "Increases critical hit rate by [FFD428]20%[-] when attacking dark Astromons.",
+            "icon_name": "se_selfbuffcriticalprob.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Fire Stalker",
+            "uid": 871917878,
+            "description": "Increases critical hit rate by [FFD428]50%[-] when attacking fire Astromons.",
+            "icon_name": "se_selfbuffcriticalprob.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Wood Stalker",
+            "uid": 2058366944,
+            "description": "Increases critical hit rate by [FFD428]50%[-] when attacking wood Astromons.",
+            "icon_name": "se_selfbuffcriticalprob.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Water Stalker",
+            "uid": 1418404398,
+            "description": "Increases critical hit rate by [FFD428]50%[-] when attacking water Astromons.",
+            "icon_name": "se_selfbuffcriticalprob.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Hunter",
+            "uid": 1347356368,
+            "description": "Increases critical hit damage by [FFD428]30%[-].",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Hunter",
+            "uid": 238638235,
+            "description": "Increases critical hit damage by [FFD428]40%[-].",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Hunter",
+            "uid": 625558178,
+            "description": "Increases critical hit damage by [FFD428]50%[-].",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Hunter",
+            "uid": 1107888705,
+            "description": "Increases critical hit damage by [FFD428]100%[-].",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Dark Hunter",
+            "uid": 226241417,
+            "description": "Increases critical hit damage by [FFD428]40%[-] when attacking dark Astromons.",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Light Hunter",
+            "uid": 1066086522,
+            "description": "Increases critical hit damage by [FFD428]40%[-] when attacking light Astromons.",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Fire Hunter",
+            "uid": 1301001604,
+            "description": "Increases critical hit damage by [FFD428]50%[-] when attacking fire Astromons.",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Wood Hunter",
+            "uid": 880068014,
+            "description": "Increases critical hit damage by [FFD428]50%[-] when attacking wood Astromons.",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Water Hunter",
+            "uid": 1819254118,
+            "description": "Increases critical hit damage by [FFD428]50%[-] when attacking water Astromons.",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Fire Hunter",
+            "uid": 1464184495,
+            "description": "Increases critical hit damage by [FFD428]100%[-] when attacking fire Astromons.",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Wood Hunter",
+            "uid": 870583843,
+            "description": "Increases critical hit damage by [FFD428]100%[-] when attacking wood Astromons.",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Water Hunter",
+            "uid": 719308829,
+            "description": "Increases critical hit damage by [FFD428]100%[-] when attacking water Astromons.",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Dark Hunter",
+            "uid": 1590181779,
+            "description": "Increases critical hit damage by [FFD428]100%[-] when attacking dark Astromons.",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Light Hunter",
+            "uid": 1096936350,
+            "description": "Increases critical hit damage by [FFD428]100%[-] when attacking light Astromons.",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Aggression (HP)",
+            "uid": 703840665,
+            "description": "Attack power becomes proportional to own max HP.",
+            "icon_name": "se_selfreplacedattackbymaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Aggression (Defense)",
+            "uid": 2112310214,
+            "description": "Attack power becomes proportional to own max defense.",
+            "icon_name": "se_selfreplacedattackbymaxdefence.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Predator",
+            "uid": 2103197141,
+            "description": "Increases damage dealt by [FFD428]20%[-].",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Predator",
+            "uid": 1881712726,
+            "description": "Increases damage dealt by [FFD428]30%[-].",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Predator",
+            "uid": 195866343,
+            "description": "Increases damage dealt by [FFD428]40%[-].",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Predator",
+            "uid": 389454128,
+            "description": "Increases damage dealt by [FFD428]50%[-].",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Predator",
+            "uid": 603090777,
+            "description": "Increases damage dealt by [FFD428]60%[-].",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Fire Predator",
+            "uid": 485049979,
+            "description": "Increases attack power by [FFD428]20%[-] when attacking fire Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Wood Predator",
+            "uid": 1667030187,
+            "description": "Increases attack power by [FFD428]20%[-] when attacking wood Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Water Predator",
+            "uid": 523867345,
+            "description": "Increases attack power by [FFD428]20%[-] when attacking water Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Dark Predator",
+            "uid": 1454528359,
+            "description": "Increases attack power by [FFD428]20%[-] when attacking dark Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Light Predator",
+            "uid": 1107677850,
+            "description": "Increases attack power by [FFD428]20%[-] when attacking light Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Fire Predator",
+            "uid": 1292758708,
+            "description": "Increases attack power by [FFD428]30%[-] when attacking fire Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Wood Predator",
+            "uid": 1531578660,
+            "description": "Increases attack power by [FFD428]30%[-] when attacking wood Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Water Predator",
+            "uid": 1863641986,
+            "description": "Increases attack power by [FFD428]30%[-] when attacking water Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Dark Predator",
+            "uid": 114753440,
+            "description": "Increases attack power by [FFD428]30%[-] when attacking dark Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Light Predator",
+            "uid": 1626756169,
+            "description": "Increases attack power by [FFD428]30%[-] when attacking light Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Fire Predator",
+            "uid": 901725477,
+            "description": "Increases attack power by [FFD428]40%[-] when attacking fire Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Wood Predator",
+            "uid": 1378759821,
+            "description": "Increases attack power by [FFD428]40%[-] when attacking wood Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Water Predator",
+            "uid": 1728037487,
+            "description": "Increases attack power by [FFD428]40%[-] when attacking water Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Wood Predator",
+            "uid": 1264984286,
+            "description": "Increases attack power by [FFD428]50%[-] when attacking wood Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Dark Predator",
+            "uid": 1975289120,
+            "description": "Increases attack power by [FFD428]50%[-] when attacking dark Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Light Predator",
+            "uid": 578168567,
+            "description": "Increases attack power by [FFD428]50%[-] when attacking light Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Fire Predator",
+            "uid": 2050596203,
+            "description": "Increases attack power by [FFD428]100%[-] when attacking fire Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Wood Predator",
+            "uid": 1865106075,
+            "description": "Increases attack power by [FFD428]100%[-] when attacking wood Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Water Predator",
+            "uid": 807663853,
+            "description": "Increases attack power by [FFD428]100%[-] when attacking water Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Dark Predator",
+            "uid": 1811445071,
+            "description": "Increases attack power by [FFD428]100%[-] when attacking dark Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Light Predator",
+            "uid": 2113068888,
+            "description": "Increases attack power by [FFD428]100%[-] when attacking light Astromons.",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 726835020,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]20%[-] of own SP when attacking.",
+            "icon_name": "se_selfhealmympbypercentfrommaxmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 1728980409,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]25%[-] of own SP when attacking.",
+            "icon_name": "se_selfhealmympbypercentfrommaxmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 661539363,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]30%[-] of own SP when attacking.",
+            "icon_name": "se_selfhealmympbypercentfrommaxmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 1562929124,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]40%[-] of own SP when attacking.",
+            "icon_name": "se_selfhealmympbypercentfrommaxmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 1047311605,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]50%[-] of own SP when attacking.",
+            "icon_name": "se_selfhealmympbypercentfrommaxmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 583719749,
+            "description": "Grants a [FFD428]30%[-] chance to restore [FFD428]100%[-] of own SP when attacking.",
+            "icon_name": "se_selfhealmympbypercentfrommaxmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 1073964037,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]10%[-] of allies' SP when attacking.",
+            "icon_name": "se_selfhealmympbypercentfrommaxmpourteam.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 1798686072,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]15%[-] of allies' SP when attacking.",
+            "icon_name": "se_selfhealmympbypercentfrommaxmpourteam.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 2030646546,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]20%[-] of allies' SP when attacking.",
+            "icon_name": "se_selfhealmympbypercentfrommaxmpourteam.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 2134555788,
+            "description": "Critical hits have a [FFD428]100%[-] chance to restore own SP by [FFD428]30%[-].",
+            "icon_name": "se_selfhealmympbypercentfrommaxmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 973034223,
+            "description": "Critical hits have a [FFD428]100%[-] chance to restore own SP by [FFD428]40%[-].",
+            "icon_name": "se_selfhealmympbypercentfrommaxmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 648307578,
+            "description": "Critical hits have a [FFD428]100%[-] chance to restore own SP by [FFD428]50%[-].",
+            "icon_name": "se_selfhealmympbypercentfrommaxmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 1745024565,
+            "description": "Critical hits have a [FFD428]100%[-] chance to restore own SP by [FFD428]100%[-].",
+            "icon_name": "se_selfhealmympbypercentfrommaxmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 1586254486,
+            "description": "Attacks greatly restore own SP in proportion to the amount of damage dealt.",
+            "icon_name": "se_selfhealmympbyenemydamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 393842668,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]20%[-] of own HP when attacking.",
+            "icon_name": "se_selfhealmyhpbypercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 868965963,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]25%[-] of own HP when attacking.",
+            "icon_name": "se_selfhealmyhpbypercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 62531221,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]30%[-] of own HP when attacking.",
+            "icon_name": "se_selfhealmyhpbypercentfrommaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 192784584,
+            "description": "Grants a [FFD428]50%[-] chance to restore [FFD428]50%[-] of own HP when attacking.",
+            "icon_name": "se_selfhealmyhpbypercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 1196419831,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]50%[-] of own HP when attacking.",
+            "icon_name": "se_selfhealmyhpbypercentfrommaxhp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 975426811,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]10%[-] of allies' HP when attacking.",
+            "icon_name": "se_selfhealmyhpbypercentfrommaxhpourteam.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 683571796,
+            "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]20%[-] of allies' HP when attacking.",
+            "icon_name": "se_selfhealmyhpbypercentfrommaxhpourteam.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 1031611664,
+            "description": "Attacks restore allies' HP in an amount equal to [FFD428]5%[-] of own max HP.",
+            "icon_name": "se_selfhealmyhpbypercentfrommymaxhpourteam.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 83238735,
+            "description": "Attacks restore allies' HP in an amount equal to [FFD428]10%[-] of own max HP.",
+            "icon_name": "se_selfhealmyhpbypercentfrommymaxhpourteam.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 1653841350,
+            "description": "Attacks restore allies' HP in an amount equal to [FFD428]20%[-] of own max HP.",
+            "icon_name": "se_selfhealmyhpbypercentfrommymaxhpourteam.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 626407394,
+            "description": "Critical hits have a [FFD428]100%[-] chance to restore own HP by [FFD428]50%[-].",
+            "icon_name": "se_selfhealmyhpbypercentfrommaxhp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 1414229460,
+            "description": "Critical hits have a [FFD428]100%[-] chance to restore allies' HP by [FFD428]10%[-].",
+            "icon_name": "se_selfhealmyhpbypercentfrommaxhpourteam.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "HP Siphon",
+            "uid": 591688082,
+            "description": "Attacks greatly restore own HP in proportion to the amount of damage dealt.",
+            "icon_name": "se_selfhealmyhpbyenemydamage.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "HP Siphon",
+            "uid": 1212809649,
+            "description": "Attacks restore own HP in proportion to the amount of damage dealt.",
+            "icon_name": "se_selfhealmyhpbyenemydamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "HP Siphon",
+            "uid": 1852420668,
+            "description": "Attacks restore own HP in proportion to the amount of damage dealt.",
+            "icon_name": "se_selfhealmyhpbyenemydamage.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "HP Siphon",
+            "uid": 1683685769,
+            "description": "Attacks greatly restore own HP in proportion to the amount of damage dealt.",
+            "icon_name": "se_selfhealmyhpbyenemydamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "HP Siphon",
+            "uid": 765874491,
+            "description": "Attacks restore allies' HP in proportion to the amount of damage dealt.",
+            "icon_name": "se_selfhealmyhpbyenemydamageourteam.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "HP Siphon",
+            "uid": 1945161120,
+            "description": "Attacks restore allies' HP in proportion to the amount of damage dealt.",
+            "icon_name": "se_selfhealmyhpbyenemydamageourteam.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "HP Siphon",
+            "uid": 1490435571,
+            "description": "Attacks restore allies' HP in proportion to the amount of damage dealt.",
+            "icon_name": "se_selfhealmyhpbyenemydamageourteam.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "HP Siphon",
+            "uid": 1761069000,
+            "description": "Attacks greatly restore allies' HP in proportion to the amount of damage dealt.",
+            "icon_name": "se_selfhealmyhpbyenemydamageourteam.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "HP Siphon",
+            "uid": 500336302,
+            "description": "Attacks greatly restore allies' HP in proportion to the amount of damage dealt.",
+            "icon_name": "se_selfhealmyhpbyenemydamageourteam.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "HP Siphon",
+            "uid": 238727482,
+            "description": "Critical hits restore own HP in proportion to the amount of damage dealt.",
+            "icon_name": "se_selfhealmyhpbyenemydamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Soul Boon: Red",
+            "uid": 2054145512,
+            "description": "Grants bonus red souls when an enemy drops blue souls from an attack.",
+            "icon_name": "se_selfclonesoulmptohp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Battle Rush",
+            "uid": 1227119317,
+            "description": "Critical hits restore [FFD428]20%[-] of own HP and SP.",
+            "icon_name": "se_selfhealmyhpmpbypercentfrommymaxhpmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Battle Rush",
+            "uid": 1056164008,
+            "description": "Attacks restore [FFD428]20%[-] of own HP and SP.",
+            "icon_name": "se_selfhealmyhpmpbypercentfrommymaxhpmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Battle Rush",
+            "uid": 1086096683,
+            "description": "Attacks restore [FFD428]25%[-] of own HP and SP.",
+            "icon_name": "se_selfhealmyhpmpbypercentfrommymaxhpmp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Battle Rush",
+            "uid": 594943243,
+            "description": "Attacks restore [FFD428]10%[-] of allies' HP and SP.",
+            "icon_name": "se_selfhealmyhpmpbypercentfrommaxhpmpourteam.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Battle Rush",
+            "uid": 1095659110,
+            "description": "Attacks restore [FFD428]15%[-] of allies' HP and SP.",
+            "icon_name": "se_selfhealmyhpmpbypercentfrommaxhpmpourteam.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Seal",
+            "uid": 820535437,
+            "description": "Grants a [FFD428]60%[-] chance to seal the enemy for [FFD428]1[-] turn(s). Sealed foes' passive skills do not activate.",
+            "icon_name": "se_sealstatuseffect.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Seal",
+            "uid": 201263606,
+            "description": "Grants a [FFD428]60%[-] chance to seal the enemy for [FFD428]2[-] turn(s). Sealed foes' passive skills do not activate.",
+            "icon_name": "se_sealstatuseffect.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Seal",
+            "uid": 139528687,
+            "description": "Grants a [FFD428]70%[-] chance to seal the enemy for [FFD428]2[-] turn(s). Sealed foes' passive skills do not activate.",
+            "icon_name": "se_sealstatuseffect.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Seal",
+            "uid": 103469734,
+            "description": "Grants a [FFD428]80%[-] chance to seal the enemy for [FFD428]2[-] turn(s). Sealed foes' passive skills do not activate.",
+            "icon_name": "se_sealstatuseffect.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Seal",
+            "uid": 737214468,
+            "description": "Grants a [FFD428]100%[-] chance to seal the enemy for [FFD428]2[-] turn(s). Sealed foes' passive skills do not activate.",
+            "icon_name": "se_sealstatuseffect.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Seal",
+            "uid": 399032209,
+            "description": "Grants a [FFD428]80%[-] chance to seal the enemy for [FFD428]3[-] turn(s). Sealed foes' passive skills do not activate.",
+            "icon_name": "se_sealstatuseffect.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Seal",
+            "uid": 2010619714,
+            "description": "Grants a [FFD428]90%[-] chance to seal the enemy for [FFD428]3[-] turn(s). Sealed foes' passive skills do not activate.",
+            "icon_name": "se_sealstatuseffect.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Seal",
+            "uid": 1128410317,
+            "description": "Grants a [FFD428]100%[-] chance to seal the enemy for [FFD428]3[-] turn(s). Sealed foes' passive skills do not activate.",
+            "icon_name": "se_sealstatuseffect.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Elemental Edge",
+            "uid": 742025025,
+            "description": "Attacks against any enemy are treated as that enemy's elemental weakness.",
+            "icon_name": "se_selfadddamagebyabsoluteelement.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Elemental Edge",
+            "uid": 117321624,
+            "description": "Critical hits against any enemy are treated as that enemy's elemental weakness.",
+            "icon_name": "se_selfadddamagebyabsoluteelement.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Courageous Strike",
+            "uid": 1291250511,
+            "description": "Greatly increases attack power in proportion to the target's maximum HP.",
+            "icon_name": "se_selfadddamagebyenemymaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Courageous Strike",
+            "uid": 1765729740,
+            "description": "Critical hits grant additional attack power proportional to the target's maximum HP.",
+            "icon_name": "se_selfadddamagebyenemymaxhp.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Unflinching Strike",
+            "uid": 1561756790,
+            "description": "Slightly increases attack power in proportion to the target's maximum HP.",
+            "icon_name": "se_selfadddamagebyenemymaxhpminimum.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Unflinching Strike",
+            "uid": 498426797,
+            "description": "Critical hits increase attack power in proportion to the target's maximum HP.",
+            "icon_name": "se_selfadddamagebyenemymaxhpminimum.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "SP Siphon",
+            "uid": 1791776990,
+            "description": "Attacks siphon 20% of the enemy's SP. (The amount cannot exceed the enemy's current SP.)",
+            "icon_name": "se_selfstealenemymp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "SP Siphon",
+            "uid": 388882877,
+            "description": "Attacks siphon 25% of the enemy's SP. (The amount cannot exceed the enemy's current SP.)",
+            "icon_name": "se_selfstealenemymp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "SP Siphon",
+            "uid": 1927228503,
+            "description": "Attacks siphon 30% of the enemy's SP. (The amount cannot exceed the enemy's current SP.)",
+            "icon_name": "se_selfstealenemymp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "SP Siphon",
+            "uid": 2080047360,
+            "description": "Attacks siphon 40% of the enemy's SP. (The amount cannot exceed the enemy's current SP.)",
+            "icon_name": "se_selfstealenemymp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "SP Siphon",
+            "uid": 2101144409,
+            "description": "Attacks siphon 50% of the enemy's SP. (The amount cannot exceed the enemy's current SP.)",
+            "icon_name": "se_selfstealenemymp.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "SP Siphon",
+            "uid": 1579948832,
+            "description": "Critical hits siphon 30% of the enemy's SP. (The amount cannot exceed the enemy's current SP.)",
+            "icon_name": "se_selfstealenemymp.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Vengeance",
+            "uid": 895699660,
+            "description": "Increases attack in proportion to the amount of health lost.",
+            "icon_name": "se_selfaddattackbyhplossrate.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Expose Weakness",
+            "uid": 611651769,
+            "description": "Grants a [FFD428]60%[-] chance to expose the enemy's weakness for [FFD428]1[-] turn(s). [i]Expose Weakness does not stack, and exposed foes take increased damage from the next attack.[/i]",
+            "icon_name": "se_ongoingweakpoint.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Expose Weakness",
+            "uid": 1981889874,
+            "description": "Grants a [FFD428]70%[-] chance to expose the enemy's weakness for [FFD428]1[-] turn(s). [i]Expose Weakness does not stack, and exposed foes take increased damage from the next attack.[/i]",
+            "icon_name": "se_ongoingweakpoint.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Expose Weakness",
+            "uid": 200093571,
+            "description": "Grants a [FFD428]80%[-] chance to expose the enemy's weakness for [FFD428]1[-] turn(s). [i]Expose Weakness does not stack, and exposed foes take increased damage from the next attack.[/i]",
+            "icon_name": "se_ongoingweakpoint.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Expose Weakness",
+            "uid": 1154967885,
+            "description": "Grants a [FFD428]100%[-] chance to expose the enemy's weakness for [FFD428]1[-] turn(s). [i]Expose Weakness does not stack, and exposed foes take increased damage from the next attack.[/i]",
+            "icon_name": "se_ongoingweakpoint.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Expose Weakness",
+            "uid": 635220263,
+            "description": "Grants a [FFD428]70%[-] chance to expose the enemy's weakness for [FFD428]2[-] turn(s). [i]Expose Weakness does not stack, and exposed foes take increased damage from the next attack.[/i]",
+            "icon_name": "se_ongoingweakpoint.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Expose Weakness",
+            "uid": 619278410,
+            "description": "Grants a [FFD428]80%[-] chance to expose the enemy's weakness for [FFD428]2[-] turn(s). [i]Expose Weakness does not stack, and exposed foes take increased damage from the next attack.[/i]",
+            "icon_name": "se_ongoingweakpoint.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Merciless Strike",
+            "uid": 18436022,
+            "description": "Increases damage in proportion to the number of negative effects afflicted upon the opponent.",
+            "icon_name": "se_selfaddattackbytargetdebuffcount.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Perservere",
+            "uid": 1029950509,
+            "description": "Increases attack as each turn passes. Stacks up to [FFD428]8[-] turns.",
+            "icon_name": "se_selfaddattackbyturnaccumulate.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Puncture",
+            "uid": 1745095067,
+            "description": "Applies a self-buff that ignores [FFD428]70%[-] of the enemy's base defense.",
+            "icon_name": "se_npenetrateup.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Puncture",
+            "uid": 2023558948,
+            "description": "Applies a self-buff that ignores [FFD428]80%[-] of the enemy's base defense.",
+            "icon_name": "se_npenetrateup.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Puncture",
+            "uid": 2127300999,
+            "description": "Applies a self-buff that ignores [FFD428]85%[-] of the enemy's base defense.",
+            "icon_name": "se_npenetrateup.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Puncture",
+            "uid": 800895797,
+            "description": "Applies a self-buff that ignores [FFD428]90%[-] of the enemy's base defense.",
+            "icon_name": "se_npenetrateup.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Puncture",
+            "uid": 1382143812,
+            "description": "Applies a self-buff that ignores [FFD428]100%[-] of the enemy's base defense.",
+            "icon_name": "se_npenetrateup.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Curse",
+            "uid": 1506957567,
+            "description": "Grants a [FFD428]80%[-] chance to inflict 2 curses on the enemy for [FFD428]2[-] turn(s). Cursed foes take HP damage.",
+            "icon_name": "se_ncurse.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Curse",
+            "uid": 1063705175,
+            "description": "Grants a [FFD428]90%[-] chance to inflict 2 curses on the enemy for [FFD428]2[-] turn(s). Cursed foes take HP damage.",
+            "icon_name": "se_ncurse.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Curse",
+            "uid": 2119437522,
+            "description": "Grants a [FFD428]100%[-] chance to inflict 2 curses on the enemy for [FFD428]2[-] turn(s). Cursed foes take HP damage.",
+            "icon_name": "se_ncurse.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Curse",
+            "uid": 1506957568,
+            "description": "Grants a [FFD428]80%[-] chance to inflict 3 curses on the enemy for [FFD428]2[-] turn(s). Cursed foes take HP damage.",
+            "icon_name": "se_ncurse.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Curse",
+            "uid": 1063705174,
+            "description": "Grants a [FFD428]90%[-] chance to inflict 3 curses on the enemy for [FFD428]2[-] turn(s). Cursed foes take HP damage.",
+            "icon_name": "se_ncurse.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Curse",
+            "uid": 423543792,
+            "description": "Grants a [FFD428]80%[-] chance to inflict 4 curses on the enemy for [FFD428]3[-] turn(s). Cursed foes take HP damage.",
+            "icon_name": "se_ncurse.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Fulminating Curse",
+            "uid": 1864092314,
+            "description": "Deals explosive damage in proportion to the number of curses afflicted upon the opponent.",
+            "icon_name": "se_ncurseexplosion.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Fearless Taunt",
+            "uid": 484325384,
+            "description": "Reduces damage received by [FFD428]50%[-] for 1 turn, and grants a [FFD428]60%[-] chance to draw enemies' attention for [FFD428]1[-] turn(s).",
+            "icon_name": "se_nprovoke.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Fearless Taunt",
+            "uid": 1734558302,
+            "description": "Reduces damage received by [FFD428]50%[-] for 1 turn, and grants a [FFD428]80%[-] chance to draw enemies' attention for [FFD428]1[-] turn(s).",
+            "icon_name": "se_nprovoke.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Fearless Taunt",
+            "uid": 409606554,
+            "description": "Reduces damage received by [FFD428]50%[-] for 1 turn, and grants a [FFD428]100%[-] chance to draw enemies' attention for [FFD428]1[-] turn(s).",
+            "icon_name": "se_nprovoke.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Fearless Taunt",
+            "uid": 96431207,
+            "description": "Reduces damage received by [FFD428]50%[-] for 1 turn, and grants a [FFD428]60%[-] chance to draw enemies' attention for [FFD428]2[-] turn(s).",
+            "icon_name": "se_nprovoke.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Fearless Taunt",
+            "uid": 1341747078,
+            "description": "Reduces damage received by [FFD428]50%[-] for 1 turn, and grants a [FFD428]70%[-] chance to draw enemies' attention for [FFD428]2[-] turn(s).",
+            "icon_name": "se_nprovoke.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Fearless Taunt",
+            "uid": 1768436421,
+            "description": "Reduces damage received by [FFD428]50%[-] for 1 turn, and grants a [FFD428]80%[-] chance to draw enemies' attention for [FFD428]2[-] turn(s).",
+            "icon_name": "se_nprovoke.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Crit. Rate Up",
+            "uid": 138416529,
+            "description": "Increases all allies' critical hit rate for [FFD428]2[-] turn(s).",
+            "icon_name": "se_ncriticalsup.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Crit. Rate Up",
+            "uid": 870191417,
+            "description": "Applies a self-buff that increases critical hit rate for [FFD428]2[-] turn(s).",
+            "icon_name": "se_ncriticalsup.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Resistance Down",
+            "uid": 3235039,
+            "description": "Grants a [FFD428]100%[-] chance to reduce enemy resistance for [FFD428]1[-] turn(s). This skill ignores enemies' resistance.",
+            "icon_name": "se_nresistdown.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Resistance Down",
+            "uid": 1619976850,
+            "description": "Grants a [FFD428]100%[-] chance to reduce enemy resistance for [FFD428]2[-] turn(s). This skill ignores enemies' resistance.",
+            "icon_name": "se_nresistdown.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Damage Reduction",
+            "uid": 232378615,
+            "description": "Reduces damage received by [FFD428]50%[-] for [FFD428]1[-] turn(s).",
+            "icon_name": "se_nreducedamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Damage Reduction",
+            "uid": 298014314,
+            "description": "Reduces damage received by all allies by [FFD428]15%[-] for [FFD428]1[-] turn(s).",
+            "icon_name": "se_nreducedamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Damage Reduction",
+            "uid": 1034635596,
+            "description": "Reduces damage received by all allies by [FFD428]30%[-] for [FFD428]2[-] turn(s).",
+            "icon_name": "se_nreducedamage.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Up",
+            "uid": 31602358,
+            "description": "Increases attack power by [FFD428]50%[-] for [FFD428]2[-] turn(s).",
+            "icon_name": "se_buffattack.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Up",
+            "uid": 1232526823,
+            "description": "Increases attack power by [FFD428]40%[-] for [FFD428]2[-] turn(s).",
+            "icon_name": "se_buffattack.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Up",
+            "uid": 1829389063,
+            "description": "Increases allies' attack power for [FFD428]2[-] turn(s).",
+            "icon_name": "se_buffattack.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Up",
+            "uid": 1642748192,
+            "description": "Increases allies' attack power for [FFD428]3[-] turn(s).",
+            "icon_name": "se_buffattack.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Barbed Taunt",
+            "uid": 845868611,
+            "description": "Performs a counterattack proportional to damage received for 1 turn, and grants a [FFD428]80%[-] chance to draw enemies' attention for [FFD428]1 turn(s)[-]. Enemies cannot die to counterattacks.",
+            "icon_name": "se_nprovokewithreflectdamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Barbed Taunt",
+            "uid": 1759348711,
+            "description": "Performs a counterattack proportional to damage received for 1 turn, and grants a [FFD428]100%[-] chance to draw enemies' attention for [FFD428]1 turn(s)[-]. Enemies cannot die to counterattacks.",
+            "icon_name": "se_nprovokewithreflectdamage.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Undying Volition",
+            "uid": 1233101046,
+            "description": "Imbues allies with an Undying buff for [FFD428]2 turn(s)[-], allowing them to survive death once,  after which all negative effects will immediately be dispelled. This effect can only be gained once per round.",
+            "icon_name": "se_nimmotal.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Undying Volition",
+            "uid": 78548630,
+            "description": "Imbues allies with an Undying buff for [FFD428]4 turn(s)[-], allowing them to survive death once,  after which all negative effects will immediately be dispelled. This effect can only be gained once per round.",
+            "icon_name": "se_nimmotal.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Undying Volition",
+            "uid": 70154402,
+            "description": "Imbues allies with an Undying buff for [FFD428]6 turn(s)[-], allowing them to survive death once,  after which all negative effects will immediately be dispelled. This effect can only be gained once per round.",
+            "icon_name": "se_nimmotal.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 1190909599,
+            "description": "Grants a shield to allies proportional to own max attack power for [FFD428]3[-] turn(s).",
+            "icon_name": "se_nshieldbyattack.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 1725652845,
+            "description": "Grants the user a shield proportional to their max attack power for [FFD428]1[-] turn(s).",
+            "icon_name": "se_nshieldbyattack.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Immunity",
+            "uid": 1372452821,
+            "description": "Removes all negative effects from allies and grants them immunity for [FFD428]2 turn(s)[-]. While immune, they will not be affected by negative effects.",
+            "icon_name": "se_nimmune.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Immunity",
+            "uid": 1715005440,
+            "description": "Removes all negative effects from allies and grants them immunity for [FFD428]3 turn(s)[-]. While immune, they will not be affected by negative effects.",
+            "icon_name": "se_nimmune.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Immunity",
+            "uid": 578730629,
+            "description": "Grants a [FFD428]100%[-] chance to remove all negative effects from the user and grant them immunity for [FFD428]2 turn(s)[-].",
+            "icon_name": "se_nimmune.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Immunity",
+            "uid": 306986127,
+            "description": "Removes all negative effects from allies and grants them immunity for [FFD428]3 turn(s)[-]. While immune, they will not be affected by negative effects.",
+            "icon_name": "se_nimmune.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Immunity",
+            "uid": 969657627,
+            "description": "Grants a [FFD428]30%[-] chance to remove all negative effects from the user and grant them immunity for [FFD428]1 turn(s)[-].",
+            "icon_name": "se_nsuperskillimmune.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Weaken",
+            "uid": 1755535115,
+            "description": "Grants a [FFD428]40%[-] chance to weaken the enemy for [FFD428]1[-] turn(s). Weakened foes have reduced attack and defense.",
+            "icon_name": "se_nsuperskillattackdefencedown.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Devastating Strikes",
+            "uid": 1758916318,
+            "description": "Increases critical hit damage by [FFD428]25%[-] against enemies with lowered defense.",
+            "icon_name": "se_nsuperskillcriticaldamage.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Shared Determination",
+            "uid": 2061645416,
+            "description": "Grants a [FFD428]50%[-] chance every [FFD428]2 turn(s)[-] to restore [FFD428]25%[-] of all allies' SP when attacking.",
+            "icon_name": "se_nsuperskillmprecoveryourteam.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Full Buff Breaker",
+            "uid": 639005867,
+            "description": "Grants a [FFD428]35%[-] chance to dispel all enemy enhancements including shields and immunity.",
+            "icon_name": "se_nsuperskillclearshield.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Recovery Seal",
+            "uid": 424026329,
+            "description": "Grants a [FFD428]70%[-] chance to disable the enemy's HP recovery for [FFD428]2[-] turn(s).",
+            "icon_name": "se_nsuperskillfinalheal.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Combat Prowess",
+            "uid": 2127724610,
+            "description": "Attacks have a [FFD428]50%[-] chance every [FFD428]2 turn(s)[-] to siphon [FFD428]15%[-] of the enemy's SP.",
+            "icon_name": "se_nsuperskillstealenemymp.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Fiery Resolve",
+            "uid": 969827379,
+            "description": "Grants a [FFD428]40%[-] chance when getting attacked to increase own attack power by [FFD428]50%[-] for [FFD428]1[-] turn(s).",
+            "icon_name": "se_nsuperskillhitbuffattack.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Unwavering Resolve",
+            "uid": 1153935710,
+            "description": "Grants a [FFD428]40%[-] chance when getting attacked to restore [FFD428]20%[-] of own HP.",
+            "icon_name": "se_nsuperskillhithealhp.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Blessing of the Fallen",
+            "uid": 278813885,
+            "description": "Grants a [FFD428]100%[-] chance when falling in battle to restore [FFD428]50%[-] of allies' HP.",
+            "icon_name": "se_nsuperskilldieourteamheal.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Protection of the Fallen",
+            "uid": 600502020,
+            "description": "Grants a buff upon death that reduces damage to all allies for that turn and the next [FFD428]1 turn(s)[-].",
+            "icon_name": "se_nsuperskilldieourteamdamagedown.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 2135392194,
+            "description": "[FFD428]30%[-] chance of granting the user a shield proportional to their max attack power for [FFD428]1[-]turn(s).",
+            "icon_name": "se_nsuperskillshieldbyattack.png",
+            "appearsAs": 16
+          }
+        },
+        {
+          "node": {
+            "name": "Lethal Strike",
+            "uid": 1745074701,
+            "description": "Greatly increases attack power in proportion to the target's total defense.",
+            "icon_name": "se_selfadddamagebyenemymaxdef.png",
+            "appearsAs": 3
+          }
+        },
+        {
+          "node": {
+            "name": "Water Edge",
+            "uid": 1953552379,
+            "description": "Attacks against any water Astromon are treated as that enemy's elemental weakness.",
+            "icon_name": "se_selfadddamagebyabsoluteelement.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 51625411,
+            "description": "Attacking an enemy whose attack is lowered has a [FFD428]25%[-] chance to stun it for [FFD428]1[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Defense Down",
+            "uid": 198900359,
+            "description": "Attacking a stunned enemy lowers its defense for [FFD428]2[-] turns. ([FFD428]25%[-] chance)",
+            "icon_name": "se_debuffdefence.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Puncture",
+            "uid": 304075880,
+            "description": "Upon using a Super Skill, Applies a self-buff that ignores [FFD428]70%[-] of the enemy's base defense.",
+            "icon_name": "se_npenetrateup.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Light Stalker",
+            "uid": 694312583,
+            "description": "Increases critical hit rate by [FFD428]40%[-] when attacking light Astromons.",
+            "icon_name": "se_selfbuffcriticalprob.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Resistance Down",
+            "uid": 744996296,
+            "description": "Grants a [FFD428]20%[-] chance to reduce enemy resistance for [FFD428]2[-] turn(s) upon attacking an enemy suffering Sap.",
+            "icon_name": "se_nresistdown.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Aggression (HP)",
+            "uid": 179506550,
+            "description": "When HP is at 50% or below, Attack power becomes proportional to own max HP.",
+            "icon_name": "se_selfreplacedattackbymaxhp.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Resistance Down",
+            "uid": 2043837800,
+            "description": "Grants a [FFD428]25%[-] chance to reduce enemy resistance for [FFD428]2[-] turn(s) upon attacking an enemy suffering Attack Down status.",
+            "icon_name": "se_nresistdown.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Purification",
+            "uid": 467870671,
+            "description": "Grants a [FFD428]25%[-] chance to cleanse all negative effects from self when hit by an attack.",
+            "icon_name": "se_cleardebuff.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Undying Volition",
+            "uid": 2061598788,
+            "description": "When HP is at 35% or below, Grants self with an Undying buff for [FFD428]4 turn(s)[-]. This effect can only be gained once per round.",
+            "icon_name": "se_nimmotal.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Resistance Down",
+            "uid": 1143848484,
+            "description": "Grants a [FFD428]25%[-] chance to reduce enemy resistance for [FFD428]2[-] turn(s) upon attacking an enemy suffering Stun.",
+            "icon_name": "se_nresistdown.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Up",
+            "uid": 566792098,
+            "description": "Upon using a Super Skill, Increases allies' attack power by [FFD428]50%[-] for [FFD428]2[-] turn(s).",
+            "icon_name": "se_buffattack.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Damage Reduction",
+            "uid": 927615830,
+            "description": "Upon using a Super Skill, Reduces damage received by all allies by [FFD428]30%[-] for [FFD428]2[-] turn(s).",
+            "icon_name": "se_nreducedamage.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Battle Rush",
+            "uid": 115912459,
+            "description": "When HP is at 50% or below, Attacks restore [FFD428]10%[-] of allies' HP and SP.",
+            "icon_name": "se_selfhealmyhpmpbypercentfrommaxhpmpourteam.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 1504016458,
+            "description": "Upon using a Super Skill, Grants a shield to allies proportional to own max HP for [FFD428]2[-] turn(s).",
+            "icon_name": "se_shielddamagebymaxhp.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Adrenaline",
+            "uid": 1221469233,
+            "description": "When HP is at 50% or below, Attacks restore allies' HP in an amount equal to [FFD428]10%[-] of own max HP.",
+            "icon_name": "se_selfhealmyhpbypercentfrommymaxhpourteam.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 150278733,
+            "description": "Grants a [FFD428]50%[-] chance to restore [FFD428]30%[-] of own SP when attacking.",
+            "icon_name": "se_selfhealmympbypercentfrommaxmp.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Up",
+            "uid": 600483649,
+            "description": "Upon using a Super Skill, Increases allies' attack power by [FFD428]50%[-] for [FFD428]2[-] turn(s).",
+            "icon_name": "se_buffattack.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 149314786,
+            "description": "Upon using a Super Skill, Grants a shield to allies proportional to own max HP for [FFD428]2[-] turn(s).",
+            "icon_name": "se_shielddamagebymaxhp.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Predator",
+            "uid": 557734289,
+            "description": "Critical hits increase damage dealt by [FFD428]25%[-].",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Aggression (Defense)",
+            "uid": 2009303613,
+            "description": "When HP is at 50% or below, Attack power becomes proportional to own max defense.",
+            "icon_name": "se_selfreplacedattackbymaxdefence.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Offense And Defense",
+            "uid": 636419177,
+            "description": "Upon using a Super Skill, Increases Attack Power by 30% and Defense by 50% for all allies for [FFD428]2[-] turn(s).",
+            "icon_name": "se_nbuffattackanddefence.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Damage Reduction",
+            "uid": 627935001,
+            "description": "When HP is at 50% or below, Reduces damage received by [FFD428]50%[-] for [FFD428]1[-] turn(s).",
+            "icon_name": "se_nreducedamage.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Fearless Taunt",
+            "uid": 1039824790,
+            "description": "Upon using a Super Skill, Reduces damage received by [FFD428]50%[-] for 1 turn, and grants a [FFD428]80%[-] chance to draw enemies' attention for [FFD428]2[-] turn(s).",
+            "icon_name": "se_nprovoke.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Full Buff Breaker",
+            "uid": 1885383481,
+            "description": "Upon using a Super Skill, Grants a [FFD428]90%[-] chance to dispel all enemy enhancements including shields and immunity.",
+            "icon_name": "se_clearbuffshield.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Aggression (Defense)",
+            "uid": 1824257389,
+            "description": "When HP is at 50% or below, Attack power becomes proportional to own max defense.",
+            "icon_name": "se_selfreplacedattackbymaxdefence.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Resistance Down",
+            "uid": 1899512581,
+            "description": "Grants a [FFD428]25%[-] chance to reduce enemy resistance for [FFD428]2[-] turn(s) upon attacking an enemy suffering Defense Down status.",
+            "icon_name": "se_nresistdown.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Water Stalker",
+            "uid": 16751513,
+            "description": "Increases critical hit rate by [FFD428]40%[-] when attacking water Astromons.",
+            "icon_name": "se_selfbuffcriticalprob.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Predator",
+            "uid": 96377508,
+            "description": "Critical hits increase damage dealt by [FFD428]25%[-].",
+            "icon_name": "se_selfadddamagebyelement.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Stun",
+            "uid": 1323876069,
+            "description": "Critical hits have a [FFD428]50%[-] chance to stun the enemy for [FFD428]1[-] turn(s).",
+            "icon_name": "se_stun.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Up",
+            "uid": 1939670283,
+            "description": "Upon using a Super Skill, Increases allies' attack power by [FFD428]50%[-] for [FFD428]2[-] turn(s).",
+            "icon_name": "se_buffattack.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Resistance Down",
+            "uid": 1393877295,
+            "description": "Upon using a Super Skill, Grants a [FFD428]100%[-] chance to reduce enemy resistance for [FFD428]3[-] turn(s). This skill ignores enemies' resistance.",
+            "icon_name": "se_nresistdown.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Purification",
+            "uid": 856564139,
+            "description": "Critical hits grant a [FFD428]100%[-] chance to cleanse all negative effects.",
+            "icon_name": "se_cleardebuff.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 1372561976,
+            "description": "Upon using a Super Skill, Grants a shield to allies proportional to own max attack power for [FFD428]3[-] turn(s).",
+            "icon_name": "se_nshieldbyattack.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "SP Siphon",
+            "uid": 1439288971,
+            "description": "Attacks have a [FFD428]50%[-] chance to siphon [FFD428]20%[-] of the enemy's SP.",
+            "icon_name": "se_selfstealenemymp.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Wood Stalker",
+            "uid": 1140990978,
+            "description": "Increases critical hit rate by [FFD428]40%[-] when attacking wood Astromons.",
+            "icon_name": "se_selfbuffcriticalprob.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Attack Up",
+            "uid": 2106319910,
+            "description": "Upon using a Super Skill, Increases allies' attack power by [FFD428]50%[-] for [FFD428]2[-] turn(s).",
+            "icon_name": "se_buffattack.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Aggression (HP)",
+            "uid": 258146710,
+            "description": "When HP is at 50% or below, Attack power becomes proportional to own max HP.",
+            "icon_name": "se_selfreplacedattackbymaxhp.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Hunter",
+            "uid": 1957202995,
+            "description": "Increases critical hit damage by [FFD428]50%[-] against enemies with lowered defense.",
+            "icon_name": "se_selfbuffcriticaldamage.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Shield",
+            "uid": 1509271106,
+            "description": "Upon landing a critical hit, has a [FFD428]50%[-] chance of granting the user a shield proportional to their max attack power for [FFD428]2[-]turn(s).",
+            "icon_name": "se_nshieldbyattack.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Expose Weakness",
+            "uid": 960343472,
+            "description": "Attacking an enemy with Defense Down has a [FFD428]70%[-] chance to expose its weakness for [FFD428]2[-] turn(s).",
+            "icon_name": "se_ongoingweakpoint.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Morale Boost",
+            "uid": 933902868,
+            "description": "Grants a [FFD428]50%[-] chance to restore [FFD428]15%[-] of allies' SP when attacking.",
+            "icon_name": "se_selfhealmympbypercentfrommaxmpourteam.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Offense And Defense",
+            "uid": 1649023432,
+            "description": "Upon using a Super Skill, Increases Attack Power by 30% and Defense by 50% for all allies for [FFD428]2[-] turn(s).",
+            "icon_name": "se_nbuffattackanddefence.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Aggression (HP)",
+            "uid": 1490886087,
+            "description": "When HP is at 50% or below, Attack power becomes proportional to own max HP.",
+            "icon_name": "se_selfreplacedattackbymaxhp.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Resistance Down",
+            "uid": 1360623548,
+            "description": "Grants a [FFD428]25%[-] chance to reduce enemy resistance for [FFD428]2[-] turn(s) upon attacking an enemy suffering Stun.",
+            "icon_name": "se_nresistdown.png",
+            "appearsAs": 8
+          }
+        },
+        {
+          "node": {
+            "name": "Forced Exchange",
+            "uid": 912690510,
+            "description": "[FFD418]90%[-] chance of stealing the 1 most recent enemy buffs and shields and giving the enemy 1 of your debuffs. Does not get activated during the boss stage.",
+            "icon_name": "se_ngivedebufftakebuff.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Forced Exchange",
+            "uid": 1685744084,
+            "description": "[FFD428]80%[-] chance of stealing the 2 most recent enemy buffs and shields and giving the enemy 2 of your debuffs. Does not get activated during the boss stage.",
+            "icon_name": "se_ngivedebufftakebuff.png",
+            "appearsAs": 1
+          }
+        },
+        {
+          "node": {
+            "name": "Offense And Defense",
+            "uid": 1900276861,
+            "description": "Increases Attack Power by 30% and Defense by 50% for all allies for [FFD428]3[-] turn(s).",
+            "icon_name": "se_nbuffattackanddefence.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Offense And Defense",
+            "uid": 1927170436,
+            "description": "Increases Attack Power by 30% and Defense by 50% for all allies for [FFD428]2[-] turn(s).",
+            "icon_name": "se_nbuffattackanddefence.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Crystallization",
+            "uid": 1020673626,
+            "description": "Grants a [FFD428]80%[-] chance to stun the enemy for [FFD428]2[-] turn(s), and prevents their passive skills from activating.",
+            "icon_name": "se_stunseal.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Crystallization",
+            "uid": 1570990607,
+            "description": "Grants a [FFD428]90%[-] chance to stun the enemy for [FFD428]2[-] turn(s), and prevents their passive skills from activating.",
+            "icon_name": "se_stunseal.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Keen",
+            "uid": 794829921,
+            "description": "Increases critical hit rate by [FFD428]15%[-] and critical hit damage by [FFD428]20%[-] for [FFD428]2[-] turn(s) for all allies participating in battle.",
+            "icon_name": "se_nbuffcriticalsupandcriticalsdmg.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Keen",
+            "uid": 619188792,
+            "description": "Increases critical hit rate by [FFD428]15%[-] and critical hit damage by [FFD428]20%[-] for [FFD428]3[-] turn(s) for all allies participating in battle.",
+            "icon_name": "se_nbuffcriticalsupandcriticalsdmg.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Guard",
+            "uid": 1147442508,
+            "description": "Grants Guard status to allies excluding self for [FFD428]2[-] turn(s).\nWhile Guard status is active, 70% of the damage received from enemies is redirected to the Guard source and is reduced by 60%.",
+            "icon_name": "se_nprotectourteam.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Guard",
+            "uid": 410168855,
+            "description": "Grants Guard status to allies excluding self for [FFD428]3[-] turn(s).\nWhile Guard status is active, 70% of the damage received from enemies is redirected to the Guard source and is reduced by 60%.",
+            "icon_name": "se_nprotectourteam.png",
+            "appearsAs": 2
+          }
+        },
+        {
+          "node": {
+            "name": "Crit. Rate Up",
+            "uid": 1787151518,
+            "description": "Increases the critical hit rate for all allies participating in battle for [FFD428]2[-] turn(s).",
+            "icon_name": "se_ncriticalsup.png",
+            "appearsAs": 2
+          }
+        }
+      ]
+    }
+  }
+}

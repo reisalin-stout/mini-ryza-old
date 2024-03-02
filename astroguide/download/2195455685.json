@@ -1,0 +1,409 @@
+{
+  "data": {
+    "allAncientColossusJson": {
+      "edges": [
+        {
+          "node": {
+            "battles": [
+              {
+                "requiredMonster": {
+                  "active_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to seal the enemy for [FFD428]3[-] turn(s). Sealed foes' passive skills do not activate.",
+                    "icon_name": "se_sealstatuseffect.png",
+                    "name": "Seal"
+                  },
+                  "active_skill": {
+                    "description": "Attacks all enemies with giant dual lasers.",
+                    "icon_name": "colossus_active.png",
+                    "name": "Ion Cannon",
+                    "target": "MST_All"
+                  },
+                  "attack": 2800,
+                  "crit_dmg": 200,
+                  "crit_rate": 10,
+                  "defence": 1200,
+                  "element": "dark",
+                  "evolution": 1,
+                  "hp": 1200000,
+                  "level": 110,
+                  "icon_name": "BossColossusD_large.png",
+                  "name": "Colossus",
+                  "recovery": 40000,
+                  "resist": 30,
+                  "stat_type": "Attacker",
+                  "super_skill": {
+                    "description": "Unleashes a powerful attack when own HP drops below a certain level, silence the enemy for 5 turns. Silenced foes cannot use their active skill.",
+                    "icon_name": "colossus_condition.png",
+                    "name": "Doomsday",
+                    "target": "MST_All"
+                  },
+                  "super_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to silence the enemy for [FFD428]5[-] turn(s). Silenced foes cannot use their active skill.",
+                    "icon_name": "se_silence.png",
+                    "name": "Silence"
+                  },
+                  "uid": 935319996,
+                  "default_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to reduce target's skill gauge by [FFD428]30%[-] for [FFD428]1[-] turns.",
+                    "icon_name": "se_ongoingdecmp.png",
+                    "name": "Thirst",
+                    "uid": 1199191840
+                  },
+                  "default_skill": {
+                    "description": "Attacks up to four enemies with an earth-shattering attack.",
+                    "icon_name": "colossus_default.png",
+                    "name": "Earth Fissure",
+                    "target": "MST_All"
+                  },
+                  "boss_effects": [
+                    {
+                      "description": "Immune to seal and action-inhibiting effects.",
+                      "icon_name": "se_bossimmunegolemboss.png",
+                      "name": "Invincibility",
+                      "uid": 1760404847
+                    },
+                    {
+                      "description": "Dispels negative effects while increasing attack power and defense every [FFD428]3[-] turns.",
+                      "icon_name": "se_bossaddstatuswithcleardebuff.png",
+                      "name": "Perfect Blessing",
+                      "uid": 1183464145
+                    },
+                    {
+                      "description": "Decreases the amount of damage taken from sap.",
+                      "icon_name": "se_bossreduceongoingdechp.png",
+                      "name": "Greater Sap Resistance",
+                      "uid": 378532289
+                    },
+                    {
+                      "description": "Deals a set amount of damage to every 5th foe that attacks.",
+                      "icon_name": "se_ongoingdechpabsolute.png",
+                      "name": "Retribution",
+                      "uid": 572142584
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "Dark\nDungeon"
+          }
+        },
+        {
+          "node": {
+            "battles": [
+              {
+                "requiredMonster": {
+                  "active_effect": {
+                    "description": "Increases critical hit rate by [FFD428]100%[-].",
+                    "icon_name": "se_selfbuffcriticalprob.png",
+                    "name": "Stalker"
+                  },
+                  "active_skill": {
+                    "description": "Attacks all enemies with giant dual lasers.",
+                    "icon_name": "colossus_active.png",
+                    "name": "Ion Cannon",
+                    "target": "MST_All"
+                  },
+                  "attack": 9200,
+                  "crit_dmg": 150,
+                  "crit_rate": 0,
+                  "defence": 1800,
+                  "element": "fire",
+                  "evolution": 1,
+                  "hp": 1000000,
+                  "level": 110,
+                  "icon_name": "BossColossusR_large.png",
+                  "name": "Colossus",
+                  "recovery": 45000,
+                  "resist": 20,
+                  "stat_type": "Attacker",
+                  "super_skill": {
+                    "description": "Unleashes a powerful attack when own HP drops below a certain level, reducing the enemy's defense for 5 turns.",
+                    "icon_name": "colossus_condition.png",
+                    "name": "Doomsday",
+                    "target": "MST_All"
+                  },
+                  "super_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to reduce the enemy's defense for [FFD428]5[-] turn(s).",
+                    "icon_name": "se_debuffdefence.png",
+                    "name": "Defense Down"
+                  },
+                  "uid": 935320000,
+                  "default_effect": {
+                    "description": "Increases critical hit rate by [FFD428]100%[-].",
+                    "icon_name": "se_selfbuffcriticalprob.png",
+                    "name": "Stalker",
+                    "uid": 233430829
+                  },
+                  "default_skill": {
+                    "description": "Attacks up to four enemies with an earth-shattering attack.",
+                    "icon_name": "colossus_default.png",
+                    "name": "Earth Fissure",
+                    "target": "MST_All"
+                  },
+                  "boss_effects": [
+                    {
+                      "description": "Immune to action-inhibiting effects.",
+                      "icon_name": "se_bossimmunecolossusboss.png",
+                      "name": "Invincibility",
+                      "uid": 1301745329
+                    },
+                    {
+                      "description": "Dispels negative effects while increasing attack power and defense every [FFD428]3[-] turns.",
+                      "icon_name": "se_bossaddstatuswithcleardebuff.png",
+                      "name": "Perfect Blessing",
+                      "uid": 1183464145
+                    },
+                    {
+                      "description": "Decreases the amount of damage taken from sap.",
+                      "icon_name": "se_bossreduceongoingdechp.png",
+                      "name": "Greater Sap Resistance",
+                      "uid": 378532289
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "Fire\nDungeon"
+          }
+        },
+        {
+          "node": {
+            "battles": [
+              {
+                "requiredMonster": {
+                  "active_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to inflict the enemy with three types of sap damage for [FFD428]3[-] turn(s). Sapped foes have decreased resistance.",
+                    "icon_name": "se_ongoingtripledechppercentfrommaxhp.png",
+                    "name": "Sap"
+                  },
+                  "active_skill": {
+                    "description": "Attacks all enemies with giant dual lasers.",
+                    "icon_name": "colossus_active.png",
+                    "name": "Ion Cannon",
+                    "target": "MST_All"
+                  },
+                  "attack": 3300,
+                  "crit_dmg": 150,
+                  "crit_rate": 10,
+                  "defence": 24000,
+                  "element": "water",
+                  "evolution": 1,
+                  "hp": 450000,
+                  "level": 110,
+                  "icon_name": "BossColossusB_large.png",
+                  "name": "Colossus",
+                  "recovery": 30000,
+                  "resist": 10,
+                  "stat_type": "Tank",
+                  "super_skill": {
+                    "description": "Unleashes a powerful attack when own HP drops below a certain level, sealing the enemy for 5 turns. Sealed foes' passive skills do not activate.",
+                    "icon_name": "colossus_condition.png",
+                    "name": "Doomsday",
+                    "target": "MST_All"
+                  },
+                  "super_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to seal the enemy for [FFD428]5[-] turn(s). Sealed foes' passive skills do not activate.",
+                    "icon_name": "se_sealstatuseffect.png",
+                    "name": "Seal"
+                  },
+                  "uid": 935319993,
+                  "default_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to inflict the enemy with two types of sap damage for [FFD428]3[-] turn(s). Sapped foes have decreased resistance.",
+                    "icon_name": "se_ongoingdoubledechppercentfrommaxhp.png",
+                    "name": "Sap",
+                    "uid": 1274425159
+                  },
+                  "default_skill": {
+                    "description": "Attacks up to four enemies with an earth-shattering attack.",
+                    "icon_name": "colossus_default.png",
+                    "name": "Earth Fissure",
+                    "target": "MST_All"
+                  },
+                  "boss_effects": [
+                    {
+                      "description": "Immune to seal and action-inhibiting effects.",
+                      "icon_name": "se_bossimmunegolemboss.png",
+                      "name": "Invincibility",
+                      "uid": 1760404847
+                    },
+                    {
+                      "description": "Dispels negative effects while increasing attack power and defense every [FFD428]3[-] turns.",
+                      "icon_name": "se_bossaddstatuswithcleardebuff.png",
+                      "name": "Perfect Blessing",
+                      "uid": 1183464145
+                    },
+                    {
+                      "description": "Decreases the amount of damage taken from sap.",
+                      "icon_name": "se_bossreduceongoingdechp.png",
+                      "name": "Greater Sap Resistance",
+                      "uid": 378532289
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "Water\nDungeon"
+          }
+        },
+        {
+          "node": {
+            "battles": [
+              {
+                "requiredMonster": {
+                  "active_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to reduce the enemy's defense for [FFD428]3[-] turn(s).",
+                    "icon_name": "se_debuffdefence.png",
+                    "name": "Defense Down"
+                  },
+                  "active_skill": {
+                    "description": "Attacks all enemies with giant dual lasers.",
+                    "icon_name": "colossus_active.png",
+                    "name": "Ion Cannon",
+                    "target": "MST_All"
+                  },
+                  "attack": 1050,
+                  "crit_dmg": 150,
+                  "crit_rate": 0,
+                  "defence": 800,
+                  "element": "tree",
+                  "evolution": 1,
+                  "hp": 2200000,
+                  "level": 110,
+                  "icon_name": "BossColossus_large.png",
+                  "name": "Colossus",
+                  "recovery": 10,
+                  "resist": 20,
+                  "stat_type": "Balanced",
+                  "super_skill": {
+                    "description": "Unleashes a powerful attack when own HP drops below a certain level, reducing the enemy's skill gauge by 50%.",
+                    "icon_name": "colossus_condition.png",
+                    "name": "Doomsday",
+                    "target": "MST_All"
+                  },
+                  "super_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to reduce target's skill gauge by [FFD428]50%[-] for [FFD428]5[-] turns.",
+                    "icon_name": "se_ongoingdecmp.png",
+                    "name": "Thirst"
+                  },
+                  "uid": 935319999,
+                  "default_effect": {
+                    "description": "Increases damage dealt by [FFD428]50%[-].",
+                    "icon_name": "se_selfadddamagebyelement.png",
+                    "name": "Predator",
+                    "uid": 389454128
+                  },
+                  "default_skill": {
+                    "description": "Attacks up to four enemies with an earth-shattering attack.",
+                    "icon_name": "colossus_default.png",
+                    "name": "Earth Fissure",
+                    "target": "MST_All"
+                  },
+                  "boss_effects": [
+                    {
+                      "description": "Immune to action-inhibiting effects.",
+                      "icon_name": "se_bossimmunecolossusboss.png",
+                      "name": "Invincibility",
+                      "uid": 1301745329
+                    },
+                    {
+                      "description": "Dispels negative effects while increasing attack power and defense every [FFD428]3[-] turns.",
+                      "icon_name": "se_bossaddstatuswithcleardebuff.png",
+                      "name": "Perfect Blessing",
+                      "uid": 1183464145
+                    },
+                    {
+                      "description": "Decreases the amount of damage taken from sap.",
+                      "icon_name": "se_bossreduceongoingdechp.png",
+                      "name": "Greater Sap Resistance",
+                      "uid": 378532289
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "Wood\nDungeon"
+          }
+        },
+        {
+          "node": {
+            "battles": [
+              {
+                "requiredMonster": {
+                  "active_effect": {
+                    "description": "Grants a [FFD428]60%[-] chance to shock target for [FFD428]2[-] turn(s). Shocked foes cannot act and have reduced defense.",
+                    "icon_name": "se_stunelectricshock.png",
+                    "name": "Shock"
+                  },
+                  "active_skill": {
+                    "description": "Attacks all enemies with giant dual lasers.",
+                    "icon_name": "colossus_active.png",
+                    "name": "Ion Cannon",
+                    "target": "MST_All"
+                  },
+                  "attack": 6000,
+                  "crit_dmg": 150,
+                  "crit_rate": 20,
+                  "defence": 50,
+                  "element": "light",
+                  "evolution": 1,
+                  "hp": 1600000,
+                  "level": 110,
+                  "icon_name": "BossColossusW_large.png",
+                  "name": "Colossus",
+                  "recovery": 10,
+                  "resist": 20,
+                  "stat_type": "Recovery",
+                  "super_skill": {
+                    "description": "Unleashes a powerful attack when own HP drops below a certain level, causing fatigue in the enemy for 5 turns. Fatigued foes gain nothing from blue souls.",
+                    "icon_name": "colossus_condition.png",
+                    "name": "Doomsday",
+                    "target": "MST_All"
+                  },
+                  "super_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to reduce the enemy's attack for [FFD428]5[-] turn(s).",
+                    "icon_name": "se_debuffattack.png",
+                    "name": "Attack Down"
+                  },
+                  "uid": 935319994,
+                  "default_effect": {
+                    "description": "Grants a [FFD428]100%[-] chance to restore [FFD428]5%[-] of own HP when attacking.",
+                    "icon_name": "se_selfhealmyhpbypercentfrommaxhp.png",
+                    "name": "Adrenaline",
+                    "uid": 190914235
+                  },
+                  "default_skill": {
+                    "description": "Attacks up to four enemies with an earth-shattering attack.",
+                    "icon_name": "colossus_default.png",
+                    "name": "Earth Fissure",
+                    "target": "MST_All"
+                  },
+                  "boss_effects": [
+                    {
+                      "description": "Immune to seal and action-inhibiting effects.",
+                      "icon_name": "se_bossimmunegolemboss.png",
+                      "name": "Invincibility",
+                      "uid": 1760404847
+                    },
+                    {
+                      "description": "Dispels negative effects while increasing attack power and defense every [FFD428]3[-] turns.",
+                      "icon_name": "se_bossaddstatuswithcleardebuff.png",
+                      "name": "Perfect Blessing",
+                      "uid": 1183464145
+                    },
+                    {
+                      "description": "Decreases the amount of damage taken from sap.",
+                      "icon_name": "se_bossreduceongoingdechp.png",
+                      "name": "Greater Sap Resistance",
+                      "uid": 378532289
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "Light\nDungeon"
+          }
+        }
+      ]
+    }
+  }
+}
