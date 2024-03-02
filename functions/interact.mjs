@@ -9551,6 +9551,7 @@ function reverseEhp(values) {
 
 async function findClan(values) {
   let clan_name = values[0].value;
+  console.log(clan_name);
   function rankUrl(map) {
     return `http://v-g-msl-rank.p-msl.com:10831/rank/top/?board_id=${map}&meta_key=rank_${map}`;
   }
