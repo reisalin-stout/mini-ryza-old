@@ -6,16 +6,18 @@ import { verifyKeyMiddleware } from "discord-interactions";
 const app = express();
 const router = Router();
 
-router.get("/", (req, res) => {
-  console.log("Reached /");
-  res.send("Hello");
-});
+function ehp(values) {
+  let hp = values[0].value;
+  let def = values[1].value;
+  let result = hp / (1 - def / (def + 1200));
+  return result;
+}
 
 function interact(command) {
   let response;
   switch (command.name) {
-    case "hello":
-      response = "Hello there!";
+    case "ehp":
+      response = ehp(command.options);
       break;
     case "bye":
       response = "Goodbye!";

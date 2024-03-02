@@ -1,8 +1,22 @@
 {
   "commands": [
     {
-      "name": "hello",
-      "description": "Say hello!"
+      "name": "ehp",
+      "description": "Check your Astromon effective HP",
+      "options": [
+        {
+          "name": "hp",
+          "description": "The total HP of your Astromon",
+          "type": 4,
+          "required": true
+        },
+        {
+          "name": "def",
+          "description": "The total Defense of your Astromon",
+          "type": 4,
+          "required": true
+        }
+      ]
     },
     {
       "name": "bye",
