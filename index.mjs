@@ -29,8 +29,6 @@ function interact(command) {
 
 const app = express();
 
-app.use(express.json());
-
 app.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, res) => {
   const message = req.body;
   if (message.type === InteractionType.APPLICATION_COMMAND) {
@@ -41,13 +39,14 @@ app.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, res
       },
     });
   }
+  /*
   try {
     console.log("Request:", message);
     res.json(interact(message));
   } catch (error) {
     console.error("Error parsing request:", error);
     res.status(400).json({ error: "Bad request" });
-  }
+  }*/
 });
 
 const PORT = 3000;
