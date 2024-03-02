@@ -62,5 +62,5 @@ function interact(command) {
   }
 }
 
-app.use("/.netlify/functions/express", router);
+app.use("/.netlify/functions/interact", router);
 export const handler = serverless(app);
