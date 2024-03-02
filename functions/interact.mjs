@@ -35,10 +35,13 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, 
   console.log(`Command received: ${command.name} (${command.type})`);
 
   try {
+    /*
+    //Uncomment if it suddenly breaks and needs to be re-validated by discord
     if (command.type == 1) {
       res.send({ type: 1 });
       return;
     }
+    */
     let result = interact(command);
     res.send({
       type: 4,
