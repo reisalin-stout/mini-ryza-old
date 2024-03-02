@@ -11,6 +11,6 @@ router.get("/", (req, res) => {
 router.post("/updatestate", (req, res) => {
   res.json("Hello");
 });
-app.use("/.netlify/functions/", router);
+app.use("/.netlify/functions/express", router);
 
 export const handler = serverless(app);
