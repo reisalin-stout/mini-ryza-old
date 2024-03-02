@@ -2,6 +2,7 @@
 import express, { Router } from "express";
 import serverless from "serverless-http";
 import { verifyKeyMiddleware } from "discord-interactions";
+import fetch from "node-fetch";
 
 const database = {
   astromons: [
