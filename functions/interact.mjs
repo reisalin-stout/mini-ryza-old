@@ -9604,11 +9604,6 @@ async function findClan(values) {
   return null;
 }
 
-// Usage:
-const clan_name = "YourClanName";
-const foundClan = await findClan(clan_name, regions);
-console.log(foundClan);
-
 async function interact(command) {
   let response;
   switch (command.name) {
