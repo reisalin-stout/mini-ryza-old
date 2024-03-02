@@ -8,16 +8,12 @@ const router = Router();
 app.use(express.json());
 
 router.get("/", (req, res) => {
+  console.log("Reached /");
   res.send("Hello");
 });
-router.post("/updatestate", (req, res) => {
-  res.json("Hello");
-});
-
-router.get("/interactions", (req, res) => {
-  res.send("Hello Site");
-});
 router.post("/interactions", (req, res) => {
+  console.log("Someone tried connecting");
+  console.log(req.body);
   const signature = req.get("X-Signature-Ed25519");
   const timestamp = req.get("X-Signature-Timestamp");
   const isValidRequest = verifyKey(req.rawBody, signature, timestamp, process.env.PUBLIC_KEY);
