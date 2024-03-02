@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
   res.send("Hello");
 });
 router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, res) => {
-  console.log("Received interaction");
+  console.log("Received interaction", req.body);
   res.send({ type: 1 });
   return;
   const message = req.body;
