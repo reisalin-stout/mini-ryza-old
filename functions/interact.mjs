@@ -1,7 +1,7 @@
 "use strict";
 import express, { Router } from "express";
 import serverless from "serverless-http";
-import { verifyKey, verifyKeyMiddleware } from "discord-interactions";
+import { verifyKeyMiddleware } from "discord-interactions";
 
 const app = express();
 const router = Router();
@@ -12,12 +12,10 @@ router.get("/", (req, res) => {
 });
 router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, res) => {
   console.log("Received interaction", req.body);
-  res.send({ type: 1 });
-  return;
-  const message = req.body;
+  const message = req.body.data;
 
   try {
-    console.log("Request:", message);
+    console.log("Request:", message.name);
     res.json(interact(message));
   } catch (error) {
     console.error("Error parsing request:", error);
