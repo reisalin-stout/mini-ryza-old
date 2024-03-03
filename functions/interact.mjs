@@ -9617,9 +9617,13 @@ async function interact(command, app_id, token) {
       break;
     case "titan-rank":
       response = "Looking for clan";
-      findClan(command.options).then((result) => {
-        patchMessage(result, app_id, token);
-      });
+      findClan(command.options)
+        .then((result) => {
+          patchMessage(result, app_id, token);
+        })
+        .catch((error) => {
+          patchMessage("Couldn't Find Clan", app_id, token);
+        });
       break;
     case "bye":
       response = "Goodbye!";
