@@ -97,8 +97,8 @@ async function interact(command) {
       await fetch(url)
         .then((response) => response.json())
         .then((data) => {
-          clans = data.results;
           console.log(data.results);
+          let clans = data.results;
           if (clans.length > 0) {
             clans.forEach((element) => {
               console.log(element[`rank_${command.options[1].value}`]);
