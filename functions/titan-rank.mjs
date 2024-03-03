@@ -85,7 +85,11 @@ async function tryout(data) {
   return new Promise((resolve) => {
     setTimeout(() => {
       if (Array.isArray(data)) {
-        resolve(data.join(""));
+        fetch(`http://v-g-msl-rank.p-msl.com:10831/rank/top/?board_id=40&meta_key=rank_40`)
+          .then((response) => response.json())
+          .then((data) => resolve(data));
+
+        //resolve(data.join(" - "));
       } else {
         resolve(String(data));
       }
@@ -94,8 +98,7 @@ async function tryout(data) {
 }
 
 export const handler = async function main(event) {
-  console.log(event);
-
+  console.log(event.queryStringParameters);
   const { clan_name, app_id, token } = event.queryStringParameters;
   try {
     //const result = await findClan(clan_name, app_id, token);
