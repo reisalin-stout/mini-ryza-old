@@ -9554,13 +9554,14 @@ async function callExternal(function_name, options) {
   let url = `https://mini-ryza.netlify.app/.netlify/functions/${function_name}`;
 
   if (options) {
-    queryString = Object.entries(options)
+    let queryString = Object.entries(options)
       .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
       .join("&");
     if (queryString) {
       url += `?${queryString}`;
     }
   }
+  console.log(`Fetching External: ${url}`);
 
   try {
     await fetch(url);
