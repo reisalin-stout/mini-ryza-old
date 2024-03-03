@@ -138,7 +138,7 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
     console.log("sending response");
     res.send({
       type: 4,
-      data: JSON.stringify({ content: "Loading..." }),
+      data: { content: "Loading..." },
     });
 
     console.log("still in the serverless function");
@@ -148,9 +148,9 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ content: "Updated Message" }),
+        body: { content: "Updated Message" },
       });
-
+      console.log("sent request");
       if (!response.ok) {
         throw new Error(`Failed to patch message: ${response.status} ${response.statusText}`);
       }
