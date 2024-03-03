@@ -151,7 +151,7 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
         content: "Congrats on sending your command!",
       },
     };
-    await fetch(`https://discord.com/api/v10/webhooks/${app_id}/${token}`, {
+    fetch(`https://discord.com/api/v10/webhooks/${app_id}/${token}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
