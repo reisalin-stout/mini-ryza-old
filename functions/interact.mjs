@@ -138,11 +138,11 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
 
     res.write({
       type: 4,
-      data: { content: "Loading..." },
+      data: JSON.stringify({ content: "Loading..." }),
     });
 
     let result = await interact(command, app_id, token);
-    res.send({
+    res.end({
       type: 4,
       data: { content: result },
     });
