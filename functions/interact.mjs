@@ -151,7 +151,7 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
         content: "Congrats on sending your command!",
       },
     };
-    fetch(`https://discord.com/api/v10/webhooks/${app_id}/${token}`, {
+    await fetch(`https://discord.com/api/v10/webhooks/${app_id}/${token}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -159,7 +159,10 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
       body: JSON.stringify(msg),
     })
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((data) => {
+        console.log("response to POST request");
+        console.log(data);
+      })
       .catch((err) => console.error(err));
     console.log("Message patched successfully");
     //let result = await interact(command, app_id, token);
