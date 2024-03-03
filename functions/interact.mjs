@@ -93,10 +93,11 @@ async function interact(command) {
     case "titan-rank":
       let url = `http://v-g-msl-rank.p-msl.com:10831/rank/top/?board_id=${command.options[1].value}&meta_key=rank_${command.options[1].value}`;
       console.log(url);
-      let region = await fetch(url);
       response = "No clan found";
-      if (region && region.results.length > 0) {
-        region.results.forEach((element) => {
+      let region = await fetch(url);
+      let clans = region.json().results;
+      if (clans.length > 0) {
+        clans.forEach((element) => {
           console.log(element[`rank_${command.options[1].value}`]);
           if (element[`rank_${command.options[1].value}`] == command.options[0].value) {
             response = element;
