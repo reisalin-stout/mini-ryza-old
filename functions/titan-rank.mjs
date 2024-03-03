@@ -81,11 +81,26 @@ async function patchMessage(content, app_id, token) {
   }
 }
 
+async function tryout(data) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      if (Array.isArray(data)) {
+        resolve(data.join(""));
+      } else {
+        resolve(String(data));
+      }
+    }, 2000);
+  });
+}
+
 export const handler = async function main(event) {
+  console.log(event);
+
   const { clan_name, app_id, token } = event.queryStringParameters;
-  console.log(clan_name, app_id, token);
   try {
-    const result = await findClan(clan_name, app_id, token);
+    //const result = await findClan(clan_name, app_id, token);
+    const result = await tryout([clan_name, app_id, token]);
+    console.log(result);
     return {
       statusCode: 200,
       body: JSON.stringify(result),
