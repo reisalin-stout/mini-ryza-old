@@ -94,17 +94,20 @@ async function interact(command) {
       let url = `http://v-g-msl-rank.p-msl.com:10831/rank/top/?board_id=${command.options[1].value}&meta_key=rank_${command.options[1].value}`;
       console.log(url);
       response = "No clan found";
-      let region = await fetch(url);
-      let clans = region.json();
-      console.log(clans);
-      if (clans.length > 0) {
-        clans.forEach((element) => {
-          console.log(element[`rank_${command.options[1].value}`]);
-          if (element[`rank_${command.options[1].value}`] == command.options[0].value) {
-            response = element;
+      await fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          clans = data.results;
+          console.log(data.results);
+          if (clans.length > 0) {
+            clans.forEach((element) => {
+              console.log(element[`rank_${command.options[1].value}`]);
+              if (element[`rank_${command.options[1].value}`] == command.options[0].value) {
+                response = element;
+              }
+            });
           }
         });
-      }
       console.log(response);
       break;
     case "bye":
