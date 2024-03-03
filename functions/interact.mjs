@@ -9632,12 +9632,12 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
       type: 4,
       data: { content: "Loading..." },
     });
-
+    /*
     let result = await interact(command, app_id, token);
     res.send({
       type: 4,
       data: { content: result },
-    });
+    });*/
   } catch (error) {
     console.error("Error parsing request:", error);
     res.status(400).json({ error: "Bad request" });
