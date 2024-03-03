@@ -144,23 +144,14 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
     console.log("still in the serverless function");
     console.log(app_id);
     console.log(token);
-    try {
-      const response = await fetch(`https://discord.com/api/webhooks/${app_id}/${token}/messages/@original`, {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: { content: "Updated Message" },
-      });
-      console.log("sent request");
-      if (!response.ok) {
-        throw new Error(`Failed to patch message: ${response.status} ${response.statusText}`);
-      }
-
-      console.log("Message patched successfully");
-    } catch (error) {
-      console.error("Error patching message:", error);
-    }
+    await fetch(`https://discord.com/api/v10/webhooks/${app_id}/${token}/messages/@original`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: { content: "Updated Message" },
+    }).then(console.log("sent request"));
+    console.log("Message patched successfully");
     //let result = await interact(command, app_id, token);
     //console.log(result);
   } catch (error) {
