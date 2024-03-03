@@ -95,12 +95,14 @@ async function interact(command) {
 
       let region = await fetch(url);
       response = "No clan found";
-      region.forEach((element) => {
-        console.log(element[`rank_${command.options[1].value}`]);
-        if (element[`rank_${command.options[1].value}`] == command.options[0].value) {
-          response = element;
-        }
-      });
+      if (region.results.length > 0) {
+        region.results.forEach((element) => {
+          console.log(element[`rank_${command.options[1].value}`]);
+          if (element[`rank_${command.options[1].value}`] == command.options[0].value) {
+            response = element;
+          }
+        });
+      }
       console.log(response);
       break;
     case "bye":
