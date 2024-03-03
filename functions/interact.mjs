@@ -9606,7 +9606,7 @@ async function findClan(values) {
   return null;
 }
 
-async function interact(command) {
+async function interact(command, app_id, token) {
   let response;
   switch (command.name) {
     case "ehp":
@@ -9616,7 +9616,10 @@ async function interact(command) {
       response = reverseEhp(command.options);
       break;
     case "titan-rank":
-      response = await findClan(command.options);
+      response = "Looking for clan";
+      findClan(command.options).then((result) => {
+        patchMessage(result, app_id, token);
+      });
       break;
     case "bye":
       response = "Goodbye!";
@@ -9631,9 +9634,31 @@ async function interact(command) {
   return response;
 }
 
+async function patchMessage(content, app_id, token) {
+  try {
+    const response = await fetch(`https://discord.com/api/webhooks/${app_id}/${token}/messages/@original`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ content: content }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to patch message: ${response.status} ${response.statusText}`);
+    }
+
+    console.log("Message patched successfully");
+  } catch (error) {
+    console.error("Error patching message:", error);
+  }
+}
+
 router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async (req, res) => {
   const command = req.body.data;
-  console.log(`Command received: ${command.name} (${command.type})`);
+  const app_id = req.body.application_id;
+  const token = req.body.token;
+  console.log(`Command received: ${command.name} (${command.type}) t:${token}`);
 
   try {
     /*
@@ -9643,7 +9668,7 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
       return;
     }
     */
-    let result = await interact(command);
+    let result = await interact(command, app_id, token);
     res.send({
       type: 4,
       data: { content: result },
