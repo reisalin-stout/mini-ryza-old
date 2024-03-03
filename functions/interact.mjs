@@ -151,20 +151,9 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
         content: "Congrats on sending your command!",
       },
     };
-    await fetch(`https://discord.com/api/v10/webhooks/${app_id}/${token}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(msg),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("response to POST request");
-        console.log(data);
-      })
-      .catch((err) => console.error(err));
+    const res = await fetch(`http://v-g-msl-rank.p-msl.com:10831/rank/top/?board_id=41&meta_key=rank_41`);
     console.log("Message patched successfully");
+    console.log(res);
     //let result = await interact(command, app_id, token);
     //console.log(result);
   } catch (error) {
