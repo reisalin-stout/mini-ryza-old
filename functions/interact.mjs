@@ -95,7 +95,8 @@ async function interact(command) {
       console.log(url);
       response = "No clan found";
       let region = await fetch(url);
-      let clans = region.json().results;
+      let clans = region.json();
+      console.log(clans);
       if (clans.length > 0) {
         clans.forEach((element) => {
           console.log(element[`rank_${command.options[1].value}`]);
