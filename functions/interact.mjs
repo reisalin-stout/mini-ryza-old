@@ -9590,6 +9590,17 @@ async function interact(command, app_id, token) {
       console.log(promise);
       break;
     case "bye":
+      res.status(200).send("Initial response");
+
+      // Update data asynchronously after 5 seconds
+      setTimeout(() => {
+        // Simulate updated data
+        const updatedData = { message: "Updated data" };
+
+        // Send updated data to the client
+        res.write(`data: ${JSON.stringify(updatedData)}\n\n`);
+      }, 5000);
+
       response = "Goodbye!";
       break;
     case "echo":
@@ -9616,6 +9627,12 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
       return;
     }
     */
+
+    res.send({
+      type: 4,
+      data: { content: "Loading..." },
+    });
+
     let result = await interact(command, app_id, token);
     res.send({
       type: 4,
