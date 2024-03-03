@@ -142,6 +142,8 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
     });
 
     console.log("still in the serverless function");
+    console.log(app_id);
+    console.log(token);
     try {
       const response = await fetch(`https://discord.com/api/webhooks/${app_id}/${token}/messages/@original`, {
         method: "PATCH",
