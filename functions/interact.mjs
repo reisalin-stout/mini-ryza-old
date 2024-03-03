@@ -135,17 +135,14 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
       return;
     }
     */
-
-    res.write({
+    console.log("sending response");
+    res.send({
       type: 4,
       data: JSON.stringify({ content: "Loading..." }),
     });
-
+    console.log("still in the serverless function");
     let result = await interact(command, app_id, token);
-    res.end({
-      type: 4,
-      data: { content: result },
-    });
+    console.log(result);
   } catch (error) {
     console.error("Error parsing request:", error);
     res.status(400).json({ error: "Bad request" });
