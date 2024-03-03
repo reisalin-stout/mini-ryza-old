@@ -9550,7 +9550,7 @@ function reverseEhp(values) {
   }
 }
 
-async function findClan(values) {
+async function findClan(values, app_id, token) {
   let clan_name = values[0].value;
   console.log(clan_name);
   function rankUrl(map) {
@@ -9585,20 +9585,28 @@ async function findClan(values) {
           if (rank_data.name === clan_name) {
             console.log("Found Something");
             console.log(entry_data);
-            return {
-              region: region.name,
-              rank: parseInt(entry) + 1,
-              clan: rank_data.name,
-              level: rank_data.boss_level,
-              score: entry_data.score,
-              phases: rank_data.join_phase_count,
-            };
+            patchMessage(
+              {
+                region: region.name,
+                rank: parseInt(entry) + 1,
+                clan: rank_data.name,
+                level: rank_data.boss_level,
+                score: entry_data.score,
+                phases: rank_data.join_phase_count,
+              },
+              app_id,
+              token
+            );
           }
         } catch (error) {
+          patchMessage("Couldn't Find Clan", app_id, token);
+
           console.log(`Error in board ${JSON.stringify(region.name)}`);
         }
       }
     } catch (error) {
+      patchMessage("Couldn't Find Clan", app_id, token);
+
       console.error(`Error fetching data for region ${region.name}: ${error}`);
     }
   }
@@ -9617,13 +9625,8 @@ async function interact(command, app_id, token) {
       break;
     case "titan-rank":
       response = "Looking for clan";
-      findClan(command.options)
-        .then((result) => {
-          patchMessage(result, app_id, token);
-        })
-        .catch((error) => {
-          patchMessage("Couldn't Find Clan", app_id, token);
-        });
+      console.log("Trying to find clan");
+      findClan(command.options, app_id, token);
       break;
     case "bye":
       response = "Goodbye!";
