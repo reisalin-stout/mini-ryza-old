@@ -81,7 +81,7 @@ async function patchMessage(content, app_id, token) {
   }
 }
 
-module.exports = async function handler(event) {
+export const handler = async function main(event) {
   const { clan_name, app_id, token } = event.queryStringParameters;
   console.log(clan_name, app_id, token);
   try {
