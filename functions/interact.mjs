@@ -9551,15 +9551,17 @@ function reverseEhp(values) {
 }
 
 async function callExternal(function_name, options) {
+  let url = `https://mini-ryza.netlify.app/.netlify/functions/${function_name}`;
+
   if (options) {
     queryString = Object.entries(options)
       .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
       .join("&");
+    if (queryString) {
+      url += `?${queryString}`;
+    }
   }
-  let url = `https://mini-ryza.netlify.app/.netlify/functions/${function_name}`;
-  if (queryString) {
-    url += `?${queryString}`;
-  }
+
   try {
     await fetch(url);
     console.log("Request sent successfully");
