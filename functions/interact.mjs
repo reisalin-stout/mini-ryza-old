@@ -92,10 +92,10 @@ async function interact(command) {
       break;
     case "titan-rank":
       let url = `http://v-g-msl-rank.p-msl.com:10831/rank/top/?board_id=${command.options[1].value}&meta_key=rank_${command.options[1].value}`;
-
+      console.log(url);
       let region = await fetch(url);
       response = "No clan found";
-      if (region.results.length > 0) {
+      if (region && region.results.length > 0) {
         region.results.forEach((element) => {
           console.log(element[`rank_${command.options[1].value}`]);
           if (element[`rank_${command.options[1].value}`] == command.options[0].value) {
@@ -106,17 +106,6 @@ async function interact(command) {
       console.log(response);
       break;
     case "bye":
-      res.status(200).send("Initial response");
-
-      // Update data asynchronously after 5 seconds
-      setTimeout(() => {
-        // Simulate updated data
-        const updatedData = { message: "Updated data" };
-
-        // Send updated data to the client
-        res.write(`data: ${JSON.stringify(updatedData)}\n\n`);
-      }, 5000);
-
       response = "Goodbye!";
       break;
     case "echo":
@@ -131,9 +120,7 @@ async function interact(command) {
 
 router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async (req, res) => {
   const command = req.body.data;
-  const app_id = req.body.application_id;
-  const token = req.body.token;
-  console.log(`Command received: ${command.name} (${command.type}) t:${token}`);
+  console.log(`Command received: ${command.name} (${command.type})`);
 
   try {
     /*
@@ -143,7 +130,6 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
       return;
     }
     */
-
     let result = await interact(command);
     console.log(result);
     res.send({
