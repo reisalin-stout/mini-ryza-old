@@ -62,6 +62,29 @@
           "description": "The name of the clan",
           "type": 3,
           "required": true
+        },
+        {
+          "name": "region",
+          "description": "The region the clan is currently defending",
+          "type": 4,
+          "required": true,
+          "choices": [
+            { "name": "Phantom Forest", "value": 40 },
+            { "name": "Lunar Valley", "value": 41 },
+            { "name": "Aria Lake", "value": 42 },
+            { "name": "Mirage Ruins", "value": 43 },
+            { "name": "Pagos Coast", "value": 44 },
+            { "name": "Seabed Caves", "value": 45 },
+            { "name": "Magma Crags", "value": 46 },
+            { "name": "Star Sanctuary", "value": 47 },
+            { "name": "Sky Falls", "value": 70 },
+            { "name": "Slumbering City", "value": 71 },
+            { "name": "Glacial Plains", "value": 72 },
+            { "name": "Aurora Plateau", "value": 73 },
+            { "name": "Deserted Battlefield", "value": 74 },
+            { "name": "Terrestrial Rift", "value": 75 },
+            { "name": "Aotea Island", "value": 76 }
+          ]
         }
       ]
     },

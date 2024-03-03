@@ -81,7 +81,7 @@ async function callExternal(function_name, options) {
   }
 }
 
-async function interact(command, app_id, token) {
+async function interact(command) {
   let response;
   switch (command.name) {
     case "ehp":
@@ -91,11 +91,17 @@ async function interact(command, app_id, token) {
       response = reverseEhp(command.options);
       break;
     case "titan-rank":
-      console.log(JSON.stringify({ clan_name: command.options[0].value, app_id: app_id, token: token }));
-      let promise = callExternal("titan-rank", { clan_name: command.options[0].value, app_id: app_id, token: token });
-      response = "Looking for clan";
-      console.log("Trying to find clan");
-      console.log(promise);
+      let url = `http://v-g-msl-rank.p-msl.com:10831/rank/top/?board_id=${command.options[1].value}&meta_key=rank_${command.options[1].value}`;
+
+      let region = await fetch(url);
+      response = "No clan found";
+      region.forEach((element) => {
+        console.log(element[`rank_${command.options[1].value}`]);
+        if (element[`rank_${command.options[1].value}`] == command.options[0].value) {
+          response = element;
+        }
+      });
+      console.log(response);
       break;
     case "bye":
       res.status(200).send("Initial response");
@@ -135,27 +141,13 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
       return;
     }
     */
-    console.log("sending response");
+
+    let result = await interact(command);
+    console.log(result);
     res.send({
       type: 4,
-      data: { content: "Loading..." },
+      data: { content: result },
     });
-
-    console.log("still in the serverless function");
-    console.log(app_id);
-    console.log(token);
-
-    let msg = {
-      type: 4,
-      data: {
-        content: "Congrats on sending your command!",
-      },
-    };
-    const fetchres = await fetch(`http://v-g-msl-rank.p-msl.com:10831/rank/top/?board_id=41&meta_key=rank_41`);
-    console.log("Message patched successfully");
-    console.log(fetchres);
-    //let result = await interact(command, app_id, token);
-    //console.log(result);
   } catch (error) {
     console.error("Error parsing request:", error);
     res.status(400).json({ error: "Bad request" });
