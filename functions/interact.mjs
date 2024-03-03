@@ -9552,7 +9552,7 @@ function reverseEhp(values) {
 
 async function callExternal(function_name, options) {
   let url = `https://mini-ryza.netlify.app/.netlify/functions/${function_name}`;
-  /*
+
   if (options) {
     let queryString = Object.entries(options)
       .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
@@ -9560,7 +9560,7 @@ async function callExternal(function_name, options) {
     if (queryString) {
       url += `?${queryString}`;
     }
-  }*/
+  }
   console.log(`Fetching External: ${url}`);
 
   try {
@@ -9583,9 +9583,11 @@ async function interact(command, app_id, token) {
       response = reverseEhp(command.options);
       break;
     case "titan-rank":
-      await callExternal("titan-rank", { clan_name: command.options[0].value, app_id: app_id, token: token });
+      console.log(JSON.stringify({ clan_name: command.options[0].value, app_id: app_id, token: token }));
+      let promise = callExternal("titan-rank", { clan_name: command.options[0].value, app_id: app_id, token: token });
       response = "Looking for clan";
       console.log("Trying to find clan");
+      console.log(promise);
       break;
     case "bye":
       response = "Goodbye!";

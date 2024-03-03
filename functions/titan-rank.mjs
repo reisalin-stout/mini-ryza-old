@@ -97,7 +97,7 @@ async function tryout(data) {
   });
 }
 
-export const handler = async function main(event) {
+export const handler = async function (event) {
   console.log(event.queryStringParameters);
   const { clan_name, app_id, token } = event.queryStringParameters;
   try {
