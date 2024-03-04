@@ -31,9 +31,8 @@ const url = await ngrok.connect(options);
 console.log(url);
 app.listen(process.env.NGROK_PORT, () => {
   console.log(`Server is running on port ${process.env.NGROK_PORT}`);
-  const postData = {
-    aaabbbccc: url,
-  };
+  const postData = {};
+  postData[process.env.BIN_SECRET] = url;
 
   const headers = {
     "Content-Type": "application/json",

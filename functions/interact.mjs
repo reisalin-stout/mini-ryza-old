@@ -20,6 +20,8 @@ async function interact(command) {
           },
         });
         const enpoint = await endpoint_res.json();
+        console.log(process.env.BIN_SECRET);
+        console.log(endpoint);
         let query = enpoint.record[process.env.BIN_SECRET] + "/mini-ryza";
         console.log(command);
 
