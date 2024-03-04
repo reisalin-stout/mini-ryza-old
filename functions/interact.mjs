@@ -45,7 +45,7 @@ async function interact(command) {
         headers: headers,
       })
         .then((response) => response.json())
-        .then((data) => console.log(data))
+        .then((data) => console.log(data.record[process.env.BIN_SECRET]))
         .catch((error) => console.error("Error:", error));
 
       response = "Goodbye!";
