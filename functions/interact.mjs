@@ -50,7 +50,7 @@ async function interact(command) {
             break;
         }
       } catch (error) {
-        response = "Couldn't find Mini Ryza, contact Ryza";
+        response = "Couldn't find Mini Ryza, contact @.reisalin.";
         console.error("Error:", error);
       }
       break;
