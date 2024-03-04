@@ -40,23 +40,23 @@ async function interact(command) {
         "X-Master-Key": process.env.BIN_KEY,
       };
 
-      let endpoint = await fetch(url, {
+      await fetch(url, {
         method: "GET",
         headers: headers,
       })
         .then((response) => response.json())
-        .then((data) => {
-          return data.record[process.env.BIN_SECRET];
+        .then(async (data) => {
+          let query = data.record[process.env.BIN_SECRET] + "/mini-ryza";
+          console.log(query);
+          await fetch(query, {
+            method: "GET",
+            headers: {
+              "ngrok-skip-browser-warning": "true",
+            },
+          });
         })
         .catch((error) => console.error("Error:", error));
-      let query = endpoint + "/mini-ryza";
-      console.log(query);
-      fetch(query, {
-        method: "GET",
-        headers: {
-          "ngrok-skip-browser-warning": "true",
-        },
-      });
+
       response = "Goodbye!";
       break;
     default:
