@@ -7,57 +7,49 @@ import fetch from "node-fetch";
 const app = express();
 const router = Router();
 
-async function callExternal(function_name, options) {
-  let url = `https://mini-ryza.netlify.app/.netlify/functions/${function_name}`;
-
-  if (options) {
-    let queryString = Object.entries(options)
-      .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
-      .join("&");
-    if (queryString) {
-      url += `?${queryString}`;
-    }
-  }
-  console.log(`Fetching External: ${url}`);
-
-  try {
-    const promise = fetch(url);
-    console.log("Request sent successfully");
-    return promise;
-  } catch (error) {
-    console.error("Error:", error);
-    throw error;
-  }
-}
-
 async function interact(command) {
   let response;
   switch (command.name) {
     case "bye":
-      let url = "https://api.jsonbin.io/v3" + "/b/" + process.env.BIN_ID + "/latest";
-      const headers = {
-        "Content-Type": "application/json",
-        "X-Master-Key": process.env.BIN_KEY,
-      };
+      try {
+        const endpoint_res = await fetch(`https://api.jsonbin.io/v3/b/${process.env.BIN_ID}/latest`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            "X-Master-Key": process.env.BIN_KEY,
+          },
+        });
+        const enpoint = await endpoint_res.json();
+        let query = enpoint.record[process.env.BIN_SECRET] + "/mini-ryza";
 
-      await fetch(url, {
-        method: "GET",
-        headers: headers,
-      })
-        .then((response) => response.json())
-        .then(async (data) => {
-          let query = data.record[process.env.BIN_SECRET] + "/mini-ryza";
-          console.log(query);
-          await fetch(query, {
-            method: "GET",
-            headers: {
-              "ngrok-skip-browser-warning": "true",
-            },
-          });
-        })
-        .catch((error) => console.error("Error:", error));
+        if (command.options) {
+          let queryString = Object.entries(options)
+            .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
+            .join("&");
+          if (queryString) {
+            query += `?${queryString}`;
+          }
+        }
+        console.log(`Fetching External: ${query}`);
+        const query_res = await fetch(query, {
+          method: "GET",
+          headers: {
+            "ngrok-skip-browser-warning": "true",
+          },
+        });
 
-      response = "Goodbye!";
+        switch (query_res.status) {
+          case 200:
+            response = "Loading...";
+            break;
+          default:
+            response = "Mini Ryza is sleeping.";
+            break;
+        }
+      } catch (error) {
+        response = "Couldn't find Mini Ryza, contact Ryza";
+        console.error("Error:", error);
+      }
       break;
     default:
       response = "Command not found";
