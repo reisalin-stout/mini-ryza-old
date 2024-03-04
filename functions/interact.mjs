@@ -22,16 +22,17 @@ async function interact(command) {
         const enpoint = await endpoint_res.json();
         let query = enpoint.record[process.env.BIN_SECRET] + "/mini-ryza";
         console.log(command);
-        /*
-        if (command.options) {
-          let queryString = Object.entries(options)
-            .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
+
+        if (command.options && command.options.length > 0) {
+          let queryString = command.options
+            .map((option) => `${option.name}=${encodeURIComponent(option.value)}`)
             .join("&");
+
           if (queryString) {
             query += `?${queryString}`;
           }
         }
-        */
+
         console.log(`Fetching External: ${query}`);
         const query_res = await fetch(query, {
           method: "GET",
