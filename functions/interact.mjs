@@ -19,10 +19,10 @@ async function interact(command) {
             "X-Master-Key": process.env.BIN_KEY,
           },
         });
-        const enpoint = await endpoint_res.json();
+        const endpoint = await endpoint_res.json();
         console.log(process.env.BIN_SECRET);
         console.log(endpoint);
-        let query = enpoint.record[process.env.BIN_SECRET] + "/mini-ryza";
+        let query = endpoint.record[process.env.BIN_SECRET] + "/mini-ryza";
         console.log(command);
 
         if (command.options && command.options.length > 0) {
