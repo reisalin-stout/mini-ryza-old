@@ -49,9 +49,14 @@ async function interact(command) {
           return data.record[process.env.BIN_SECRET];
         })
         .catch((error) => console.error("Error:", error));
-      let query = endpoint + "/endp?param1=value1&param2=value2";
+      let query = endpoint + "/mini-ryza";
       console.log(query);
-      fetch(query);
+      fetch(query, {
+        method: "GET",
+        headers: {
+          "ngrok-skip-browser-warning": "true",
+        },
+      });
       response = "Goodbye!";
       break;
     default:
