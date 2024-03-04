@@ -10,6 +10,8 @@ app.use(express.json());
 app.get("/mini-ryza", (req, res) => {
   res.status(200).send("Hello");
   console.log("Someone Connected");
+  const parameters = req.query;
+  console.log(parameters);
 });
 
 let options = {
@@ -44,6 +46,6 @@ app.listen(process.env.NGROK_PORT, () => {
     body: JSON.stringify(postData),
   })
     .then((response) => response.json())
-    .then((data) => console.log(data))
+    .then((data) => console.log("Records updated"))
     .catch((error) => console.error("Error:", error));
 });
