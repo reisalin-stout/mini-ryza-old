@@ -7,63 +7,57 @@ import fetch from "node-fetch";
 const app = express();
 const router = Router();
 
-async function interact(command) {
+async function interact(command, app_id, token) {
   let response;
-  switch (command.name) {
-    case "bye":
-      try {
-        const endpoint_res = await fetch(`https://api.jsonbin.io/v3/b/${process.env.BIN_ID}/latest`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            "X-Master-Key": process.env.BIN_KEY,
-          },
-        });
-        const endpoint = await endpoint_res.json();
-        console.log(process.env.BIN_SECRET);
-        console.log(endpoint);
-        let query = endpoint.record[process.env.BIN_SECRET] + "/mini-ryza";
-        console.log(command);
+  try {
+    const endpoint_res = await fetch(`https://api.jsonbin.io/v3/b/${process.env.BIN_ID}/latest`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Master-Key": process.env.BIN_KEY,
+      },
+    });
+    const endpoint = await endpoint_res.json();
+    let query =
+      endpoint.record[process.env.BIN_SECRET] +
+      "/mini-ryza" +
+      `?command=${command.name}&appid=${app_id}&token=${token}`;
 
-        if (command.options && command.options.length > 0) {
-          let queryString = command.options
-            .map((option) => `${option.name}=${encodeURIComponent(option.value)}`)
-            .join("&");
+    if (command.options && command.options.length > 0) {
+      let queryString = command.options.map((option) => `${option.name}=${encodeURIComponent(option.value)}`).join("&");
 
-          if (queryString) {
-            query += `?${queryString}`;
-          }
-        }
-
-        console.log(`Fetching External: ${query}`);
-        const query_res = await fetch(query, {
-          method: "GET",
-          headers: {
-            "ngrok-skip-browser-warning": "true",
-          },
-        });
-
-        switch (query_res.status) {
-          case 200:
-            response = "Loading...";
-            break;
-          default:
-            response = "Mini Ryza is sleeping.";
-            break;
-        }
-      } catch (error) {
-        response = "Couldn't find Mini Ryza, contact @.reisalin.";
-        console.error("Error:", error);
+      if (queryString) {
+        query += `&${queryString}`;
       }
-      break;
-    default:
-      response = "Command not found";
+    }
+
+    const query_res = await fetch(query, {
+      method: "GET",
+      headers: {
+        "ngrok-skip-browser-warning": "true",
+      },
+    });
+
+    switch (query_res.status) {
+      case 200:
+        response = "Loading...";
+        break;
+      default:
+        response = "Mini Ryza is sleeping.";
+        break;
+    }
+  } catch (error) {
+    response = "Couldn't find Mini Ryza, contact @.reisalin.";
+    console.error("Error:", error);
   }
+
   return response;
 }
 
 router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async (req, res) => {
   const command = req.body.data;
+  const app_id = req.body.application_id;
+  const token = req.body.token;
   console.log(`Command received: ${command.name} (${command.type})`);
 
   try {
@@ -74,7 +68,7 @@ router.post("/interactions", verifyKeyMiddleware(process.env.PUBLIC_KEY), async 
       return;
     }
     */
-    let result = await interact(command);
+    let result = await interact(command, app_id, token);
     res.send({
       type: 4,
       data: { content: result },
