@@ -8,13 +8,17 @@ const auth_header = {
   "Content-Type": "application/json",
 };
 
-async function patchDiscordMessageById(channelId, messageId, newMessage) {
+export async function patchDiscordMessageById(channelId, messageId, newMessage, newEmbed) {
   let url = `https://discord.com/api/v10/channels/${channelId}/messages/${messageId}`;
-
+  let payload = {};
+  payload.content = newMessage;
+  if (newEmbed.length > 0) {
+    payload.embeds = newEmbed;
+  }
   fetch(url, {
     method: "PATCH",
     headers: auth_header,
-    body: JSON.stringify({ content: newMessage }),
+    body: JSON.stringify(payload),
   })
     .then(console.log("Message Patched"))
     .catch((error) => console.error("Error:", error));
@@ -27,7 +31,7 @@ export async function sendDiscordMessage(channelId, message, embeds = []) {
   if (embeds.length > 0) {
     payload.embeds = embeds;
   }
-  await fetch(url, {
+  return await fetch(url, {
     method: "POST",
     headers: {
       Authorization: `Bot ${process.env.DISCORD_AUTHTOKEN}`,
@@ -37,7 +41,8 @@ export async function sendDiscordMessage(channelId, message, embeds = []) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("Sent:", JSON.stringify(payload.content));
+      return data;
+      //console.log("Sent:", JSON.stringify(payload.content));
     })
     .catch((error) => {
       console.error(error);

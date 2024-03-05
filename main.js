@@ -2,7 +2,7 @@ import * as ngrok from "ngrok";
 import dotenv from "dotenv";
 import express from "express";
 import fetch from "node-fetch";
-import { startListener } from "./src/tracker.js";
+import { trackPackages } from "./src/tracker.js";
 
 dotenv.config();
 const app = express();
@@ -74,7 +74,7 @@ let options = {
     //Add Logic
   },
   onLogEvent: (data) => {
-    console.log(data);
+    //console.log(data);
   },
 };
 
@@ -99,5 +99,5 @@ app.listen(process.env.NGROK_PORT, () => {
     .then((data) => console.log("Records updated"))
     .catch((error) => console.error("Error:", error));
 
-  startListener();
+  trackPackages();
 });
