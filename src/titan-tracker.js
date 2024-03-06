@@ -13,6 +13,58 @@ const titan_images = {
   Light: "https://astroguide-assets.s3.amazonaws.com/BossTitan_large.png",
 };
 
+class TitanBattle {
+  constructor(level) {
+    this.level = level;
+    this.element = ["Fire", "Dark", "Water", "Wood", "Light"][(1 + parseInt(level)) % 5];
+    this.image = titan_images[this.element];
+    this.partecipants = [];
+    for (let titan_levels of Object.values(titan_hitters)) {
+      let foundIndex = titan_levels.findIndex((obj) => obj.name === content.name);
+      const foundObject = titan_levels[foundIndex];
+      if (foundObject) {
+        patchDiscordMessageById(
+          process.env.TITAN_CHANNEL_ID,
+          foundObject.msg_id,
+          "Clan Battle Notice",
+          battle_result_message
+        );
+        titan_levels.splice(foundIndex, 1);
+        return;
+      }
+    }
+  }
+}
+
+class ClanBattleMessage {
+  constructor(description, image = "") {
+    this.message = "Clan Battle Notice";
+    this.embed = [
+      {
+        type: "rich",
+        title: "Clan Battle",
+        description: description,
+        color: 0xfce205,
+        thumbnail: {
+          url: image,
+          height: 64,
+          width: 64,
+        },
+        author: {
+          name: `AttkOnTitan`,
+        },
+      },
+    ];
+  }
+}
+
+async function onClanBattleStart(data) {
+  let battle_start_message = new ClanBattleMessage(`${content.name} entered Clan Battle`);
+
+  let response = await sendDiscordMessage(process.env.TITAN_CHANNEL_ID, "Clan Battle Notice", battle_start_message);
+  titan_hitters[titan_index].push({ name: content.name, msg_id: response.id });
+}
+
 export async function chatNotify(content) {
   console.log(content);
 }

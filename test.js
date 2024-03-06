@@ -1,5 +1,6 @@
 import { spawn } from "child_process";
 import { processMessage, chatNotify } from "./titan-tracker.js";
+
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -8,12 +9,13 @@ const OPTIONS = [
   "-i",
   "WiFi",
   "-Y",
-  ' frame.len>124 && frame.len<360 && tcp.flags == 0x0018 && _ws.col.protocol == "TCP" && eth.dst.lg == False',
+  'frame.len>124 && frame.len<360 && tcp.flags == 0x0018 && _ws.col.protocol == "TCP"',
   "-x",
   "-l",
   "--hexdump",
   "noascii",
 ];
+//_ws == websocket or something
 async function decode(content) {
   if (content.room != "group") {
     return;
@@ -29,6 +31,7 @@ async function decode(content) {
     default:
       console.log(`Triggered: ${content.type}`);
   }
+  console.log(content);
 }
 
 export async function trackPackages() {
