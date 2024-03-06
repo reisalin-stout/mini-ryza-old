@@ -2,13 +2,15 @@ import { spawn } from "child_process";
 import { processMessage, chatNotify } from "./titan-tracker.js";
 import dotenv from "dotenv";
 dotenv.config();
+let totalPackets = 0;
+let unrequiredPackets = 0;
 
 const TSHARK_PATH = "C:\\Program Files\\Wireshark\\tshark.exe";
 const OPTIONS = [
   "-i",
   "WiFi",
   "-Y",
-  ' frame.len>124 && frame.len<360 && tcp.flags == 0x0018 && _ws.col.protocol == "TCP" && eth.dst.lg == False',
+  'frame.len>124 && frame.len<360 && tcp.flags == 0x0018 && _ws.col.protocol == "TCP" && eth.dst.lg == False',
   "-x",
   "-l",
   "--hexdump",
@@ -16,6 +18,7 @@ const OPTIONS = [
 ];
 async function decode(content) {
   if (content.room != "group") {
+    console.log(`Received a message for chat: ${content.room}`);
     return;
   }
 
@@ -43,6 +46,7 @@ export async function trackPackages() {
       .replace(/\s/g, "");
     let softstring = Buffer.from(stringified, "hex").toString("utf-8");
     let matches = softstring.match(/42\[(.*?)\]/g);
+    totalPackets++;
     if (matches) {
       matches.map((match) => {
         const withoutPrefix = match.replace(/^42/, "");
@@ -57,7 +61,8 @@ export async function trackPackages() {
         }
       });
     } else {
-      console.log("Unrequired packet intercepted");
+      unrequiredPackets++;
+      console.log(`(${totalPackets}) Unrequired packet N. ${unrequiredPackets} intercepted`);
     }
   });
 

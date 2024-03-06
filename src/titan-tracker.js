@@ -2,9 +2,6 @@ import { sendDiscordMessage, patchDiscordMessageById } from "../discord/messages
 import dotenv from "dotenv";
 dotenv.config();
 
-let titan_index = "defaultIndex";
-let titan_hitters = { defaultIndex: [] };
-
 const titan_images = {
   Fire: "https://astroguide-assets.s3.amazonaws.com/BossTitanR_large.png",
   Dark: "https://astroguide-assets.s3.amazonaws.com/BossTitanD_large.png",
@@ -16,23 +13,83 @@ const titan_images = {
 class TitanBattle {
   constructor(level) {
     this.level = level;
-    this.element = ["Fire", "Dark", "Water", "Wood", "Light"][(1 + parseInt(level)) % 5];
+    this.element = ["Fire", "Dark", "Water", "Wood", "Light"][this.level % 5];
     this.image = titan_images[this.element];
     this.partecipants = [];
-    for (let titan_levels of Object.values(titan_hitters)) {
-      let foundIndex = titan_levels.findIndex((obj) => obj.name === content.name);
-      const foundObject = titan_levels[foundIndex];
-      if (foundObject) {
-        patchDiscordMessageById(
-          process.env.TITAN_CHANNEL_ID,
-          foundObject.msg_id,
-          "Clan Battle Notice",
-          battle_result_message
-        );
-        titan_levels.splice(foundIndex, 1);
-        return;
-      }
+    this.trailingText = "";
+    this.msgId = "";
+  }
+
+  joined(name) {
+    const participant = this.partecipants.find((partecipant) => partecipant.name == name);
+    console.log(`Someone joined: ${name}`);
+    if (typeof participant === "undefined") {
+      this.partecipants.push({ name: name, damage: 0, contribution: 0 });
+      this.updateMessage();
     }
+    console.log(`Tried adding another partecipation on same titan for ${name}`);
+  }
+
+  isAwaiting(name) {
+    const participant = this.partecipants.find((partecipant) => partecipant.name === name && partecipant.damage === 0);
+    if (typeof participant === "undefined") {
+      return false;
+    }
+    return true;
+  }
+
+  finished(name, damage, contribution) {
+    const participant = this.partecipants.find((participant) => participant.name === name);
+    if (typeof participant === "undefined") {
+      console.log(`Participant '${name}' not found.`);
+    } else {
+      participant.damage = damage;
+      participant.contribution = contribution;
+    }
+    this.updateMessage();
+  }
+
+  kill(name) {
+    this.trailingText = `\n${name} was the one dealing the killing blow!`;
+    this.updateMessage();
+  }
+
+  message() {
+    let textMessage = `${this.element} Titan level ${this.level} appeared!`;
+    if (this.partecipants.length > 0) {
+      textMessage += this.partecipants.reduce((acc, user) => {
+        console.log(user);
+        const formattedDamage = `**${user.damage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}**`;
+        const formattedContribution = `${Math.round(user.contribution * 100) / 100}`;
+        let firstPart = `\n**${user.name}** `;
+        let secondPart =
+          user.damage > 0
+            ? `dealt ${formattedDamage} damage (Contribution: ${formattedContribution}%)`
+            : "entered battle!";
+
+        return acc + firstPart + secondPart;
+      }, "");
+    }
+    textMessage += this.trailingText;
+    return new ClanBattleMessage(textMessage, this.image);
+  }
+  async createMessage() {
+    let battleStartMessage = this.message();
+    let response = await sendDiscordMessage(
+      process.env.TITAN_CHANNEL_ID,
+      battleStartMessage.message,
+      battleStartMessage.embed
+    );
+    this.msgId = response.id;
+  }
+  async updateMessage() {
+    let battleContinueMessage = this.message();
+    await patchDiscordMessageById(
+      process.env.TITAN_CHANNEL_ID,
+      this.msgId,
+      battleContinueMessage.message,
+      battleContinueMessage.embed
+    );
   }
 }
 
@@ -58,145 +115,89 @@ class ClanBattleMessage {
   }
 }
 
-async function onClanBattleStart(data) {
-  let battle_start_message = new ClanBattleMessage(`${content.name} entered Clan Battle`);
+class ClanBattle {
+  constructor() {
+    this.battles = [];
+  }
 
-  let response = await sendDiscordMessage(process.env.TITAN_CHANNEL_ID, "Clan Battle Notice", battle_start_message);
-  titan_hitters[titan_index].push({ name: content.name, msg_id: response.id });
+  onClanBattleStart(message) {
+    if (this.battles.length > 0) {
+      this.battles[this.battles.length - 1].joined(message.name);
+    } else {
+      sendDiscordMessage(
+        process.env.TITAN_CHANNEL_ID,
+        `${message.name} Joined Clan Battle but I don't know what level`,
+        []
+      );
+    }
+  }
+
+  onClanBattleResult(message) {
+    if (this.battles.length > 0) {
+      for (let i = this.battles.length - 1; i >= 0; i--) {
+        if (this.battles[i].isAwaiting(message.name)) {
+          this.battles[i].finished(
+            message.name,
+            parseInt(message.metadata.clan_score),
+            parseFloat(message.metadata.contribution)
+          );
+          break;
+        }
+      }
+    }
+  }
+
+  onClanBattleEnd(message) {
+    if (this.battles.length > 0) {
+      this.battles[this.battles.length - 1].kill(message.name);
+    }
+    this.battles.push(new TitanBattle(parseInt(message.metadata.battle_lvl) + 1));
+    this.battles[this.battles.length - 1].createMessage();
+  }
 }
 
 export async function chatNotify(content) {
   console.log(content);
 }
 
+const AttkOnTitan = new ClanBattle();
 export async function processMessage(content) {
   if (typeof content.metadata.type === "undefined") {
+    return;
   }
-  if (content.metadata.type == "test-message") {
-  }
-
-  /*Datas
-    join_by_user_ship
-      -ship name
-    find_friend_dungeon
-    rare_monster_capture
-      -monster_uid
-    monster_super_beyond
-    rune_max_upgrade
-    cvc_attack_result
-    cvd_battle_result (apophis)
-     */
-
   switch (content.metadata.type) {
     case "clan_battle_start":
-      let battle_start_message = [
-        {
-          type: "rich",
-          title: "Clan Battle",
-          description: `${content.name} entered Clan Battle`,
-          color: 0xfce205,
-          thumbnail: {
-            url: ``,
-            height: 64,
-            width: 64,
-          },
-          author: {
-            name: `AttkOnTitan`,
-          },
-        },
-      ];
-      let response = await sendDiscordMessage(process.env.TITAN_CHANNEL_ID, "Clan Battle Notice", battle_start_message);
-      titan_hitters[titan_index].push({ name: content.name, msg_id: response.id });
-      return;
+      AttkOnTitan.onClanBattleStart(content);
+      break;
     case "clan_battle_result":
-      let battle_result_message = [
-        {
-          type: "rich",
-          title: "Clan Battle",
-          description: `${content.name} entered Clan Battle\n${
-            content.name
-          } dealt **${content.metadata.clan_score.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}** damage (contribution: ${
-            Math.round(content.metadata.contribution * 100) / 100
-          }%)`,
-          color: 0xfce205,
-          thumbnail: {
-            url: ``,
-            height: 64,
-            width: 64,
-          },
-          author: {
-            name: `AttkOnTitan`,
-          },
-        },
-      ];
-      for (let titan_levels of Object.values(titan_hitters)) {
-        let foundIndex = titan_levels.findIndex((obj) => obj.name === content.name);
-        const foundObject = titan_levels[foundIndex];
-        if (foundObject) {
-          patchDiscordMessageById(
-            process.env.TITAN_CHANNEL_ID,
-            foundObject.msg_id,
-            "Clan Battle Notice",
-            battle_result_message
-          );
-          titan_levels.splice(foundIndex, 1);
-          return;
-        }
-      }
-      return;
+      AttkOnTitan.onClanBattleResult(content);
+      break;
     case "clan_battle_kill_boss":
-      let elements = ["Fire", "Dark", "Water", "Wood", "Light"];
-      let oldTitan = elements[parseInt(content.metadata.battle_lvl) % 5];
-      let titan = elements[(1 + parseInt(content.metadata.battle_lvl)) % 5];
-      let battle_kill_message = [
-        {
-          type: "rich",
-          title: "Clan Battle",
-          description: `${content.name} killed ${oldTitan} Titan level ${
-            content.metadata.battle_lvl
-          }, good job!\n${titan} Titan level ${parseInt(content.metadata.battle_lvl) + 1} appears.`,
-          color: 0xfce205,
-          thumbnail: {
-            url: titan_images[titan],
-            height: 64,
-            width: 64,
-          },
-          author: {
-            name: `AttkOnTitan`,
-          },
-        },
-      ];
-      let key = `${titan}-${parseInt(content.metadata.battle_lvl) + 1}`;
-      titan_hitters[key] = [];
-      titan_index = key;
-      await sendDiscordMessage(process.env.TITAN_CHANNEL_ID, "Clan Battle Notice", battle_kill_message);
-      return;
+      AttkOnTitan.onClanBattleEnd(content);
+      break;
     case "cvc_attack_result":
-      return [null, null];
-      let cvc_result = ["null", "1W - 1L", "0W - 2L", "2W - 0L"];
-      let cvc_custom = ["null", "Must have been a difficult battle!", "Happens to the best!", "You make me proud!"];
-      let cvc_result_message = [
-        {
-          type: "rich",
-          title: "Clan vs Clan",
-          description: `${content.name} fought in CvC, result: ${cvc_result[content.metadata.battle_result]}\n${
-            cvc_custom[content.metadata.battle_result]
-          }`,
-          color: 0xb22222,
-          thumbnail: {
-            url: ``,
-            height: 64,
-            width: 64,
-          },
-          author: {
-            name: `AttkOnTitan`,
-          },
-        },
-      ];
-      return ["Clan vs Clan Notice", cvc_result_message];
+      console.log(`${content.name} battled in CvC!`);
+      break;
+    case "cvd_battle_result":
+      console.log(`${content.name} battled versus Apophis!`);
+      break;
     case "rare_monster_summon":
+      console.log(`${content.name} summoned a rare Astromon (${content.metadata.monster_uid})!`);
+      break;
     case "join_by_user_ship":
+      console.log(`${content.name} on ${content.metadata.ship_name} joined!`);
+      break;
+    case "find_friend_dungeon":
+      console.log(`${content.name} found a friend dungeon!`);
+      break;
+    case "rune_max_upgrade":
+      console.log(`${content.name} upgraded a gem to +15!`);
+      break;
+    case "monster_super_beyond":
+      console.log(`${content.name} Super Ascended an Astromon!`);
+      break;
     default:
-      return [null, null];
+      console.log(`${content.name} triggered ${content.metadata.type}`);
+      break;
   }
 }
